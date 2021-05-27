@@ -156,43 +156,37 @@
 
 /*Pagina de Ropa*/
 
-
-header{
-    margin-bottom: auto;
-    margin-left: 10px;
-    margin-top: 10px;
-    text-align: left;
-    position: static;
-}
-.seccionropa{
+.contenedor{
     display: grid;
-    grid-template-columns: 500px 500px 200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     grid-gap: 20px;
+    
 }
 
-h2{
-    margin-left: 60px;
-}
-.imagenropa{
-    width: 60%;
-    height: 90%;
-    margin-left: 150px;
-    margin-right: 10px;
-    background: brown;
-    border: 10px groove rgb(209, 124, 27);
-}
-.textoropa{
-   border: 2px groove mediumorchid;
-   padding-bottom: 20px;
-   padding-top: 10px;
-   padding-left: 10px;
-   margin-bottom: auto;
-   border-radius: 3px;
+.header{
+    grid-column: 1 / 5;
     text-align: center;
-   
+    font-size: 50px;
+    border: 10px groove crimson;
+    margin: auto;
 }
+
 .anuncio{
-    margin-left: 10%;
-    width: 80%;
-    height: 250px;
+    height: 300px;
+    width: 60%;
+    align-items: center;
+    
+}
+
+.seccion1{
+    grid-column: 2 / 3;
+}
+
+.seccion1 .modelo{
+    width: 60%;
+}
+.seccion2{
+    text-align:center;
+    
 }
