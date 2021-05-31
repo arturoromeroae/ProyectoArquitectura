@@ -1,31 +1,39 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color: #00d199;
+}
+
 .menuPrincipal{
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
+    background-color: #00ffbb;
+    overflow: auto;
 }
 
 .menuPrincipal a {
     float: left;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
+    color: black;
+    padding: 12px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .menuPrincipal a:hover {
     background-color: rgb(163, 162, 162);
-    color: black;
+    color: white;
 }
 
 .menuPrincipal a.active {
-    background-color: #04AA6D;
+    background-color: #ff4870;
     color: white;
 }
 
 .barraBusqueda{
     text-align: right;
     overflow: hidden;
-    background-color: #000000;
+    background-color: #00ffbb;
 }
 
 .barraBusqueda input {
@@ -41,26 +49,46 @@
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #04AA6D;
+    background: #ff4870;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
 
+#bannercontacto{
+    background-color: #ff4870;
+    display: flex;
+}
+
+.triangle-down {
+	width: 0px;
+	height: 0px;
+	border-left: 0px solid transparent;
+	border-right: 1350px solid transparent;
+	border-top: 80px solid #ff4870;
+}
+
 #titulocontactato {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 40%;
+    margin-left: 15%;
+    margin-top: 10%;
+    font-size: 40px;
+    color: white;
 }
 
 #imgcontacto{
     float: left;
 }
 
+#image-contact{
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
 #textocontacto {
-    font-family: Arial, Helvetica, sans-serif;
     padding-left: 30%;
     padding-right: 15%;
     padding-top: 2%;
+    margin-bottom: 0;
 }
 
                             /*------------------Parte de Enzo -------------------*/
