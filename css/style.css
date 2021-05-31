@@ -47,154 +47,172 @@
     cursor: pointer;
 }
 
-/*CSS de Enzo*/
-*{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-}
-/*Primera Pagina Zapatillas*/
-
-
-/*Titulo*/
-.titulo{
-    height: 100px;
-    width: 100%;
-    
-    line-height: 90px;
-    text-align: center;
-    border: 1px solid purple;
-    background: aqua;
-    margin-right: -50px;
-    position: static;
-    
-    
-    
+#titulocontactato {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 40%;
 }
 
-/*Texto dentro del recuadro*/
-.texto{
-    border: 1px solid black;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    border-radius: 3%;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    background: wheat;
+#imgcontacto{
+    float: left;
 }
 
-/*Tamaño del recuadro*/
-.secciones{
-    border-radius: 10px;
-
+#textocontacto {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30%;
+    padding-right: 15%;
+    padding-top: 2%;
 }
 
+                            /*------------------Parte de Enzo -------------------*/
+                            /*---------------------------------------------------*/
 
-/*Dividirlo en columnas*/
-.columna{
+
+    /*Zapatillas-Deportivas.html*/
+
+.contenedor{
     display: grid;
-    grid-template-columns: 300px 600px 300px;
-    grid-gap: 20px;
-    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, auto);
     text-align: center;
+    align-items: center;
+    background: cadetblue;
+    grid-gap: 10px;
 }
-
-
-/*tamaño de la imagen estrella*/
-.tamañoestrella{
-    height: 15%;
-    width: 100%;
-    margin-top: 10px;
-
-}
-
-
-/*Tamaño de la imagen zapatos*/
-.fotostamañozapato{
-    padding-left: 20px;
-    height: 80%;    
-    /*El width es ancho*/
-    width: 70%;   
-    border: 6px solid orangered;
-    border-radius: 10px;
-}
-
-
-/*precio*/
-.precio{
-    line-height: 0px;
-    font-size: 100px;
-    margin-top: -40px;
-    margin-left: 505px;
-    margin-bottom: 90px;
-    position: static;
-}
-
-
-/*Tamaño de las imagenes*/
-.posicionmarcas{
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-gap: 20px;
+.header{
     text-align: center;
-    margin-left: 20px;
+    grid-column: 1 / 5;
+    margin-top: 40px;
+    margin: auto;
+    border: 5px groove grey;
+    font-size: 50px;
+    
 }
 
-.marcasventa{
-    height: 40%;
-    width: 80%;
-    /*Boder
-    groove: es un estilo con un cortorno fuerte y debil interior*/
-    border: 6px groove rgb(209, 124, 27);
-    border-radius: 10px;
+.seccion1{
+    
+    grid-column: 1 / 1;
+    border: 5px solid goldenrod;
+
 }
 
-.saltodepagina{
-    clear: both;
+.seccion2{
+    
+    grid-column: 2 / 4;
+    border: 5px solid blue;
 }
-
-
-
-/*Pagina de Ropa*/
-
-
-header{
-    margin-bottom: auto;
-    margin-left: 10px;
-    margin-top: 10px;
-    text-align: left;
-    position: static;
+.seccion2 h2{
+    
+    margin: auto;
+    
+    font-size: 40px;
 }
-.seccionropa{
-    display: grid;
-    grid-template-columns: 500px 500px 200px;
-    grid-gap: 20px;
-}
-
-h2{
-    margin-left: 60px;
-}
-.imagenropa{
+.seccion2 .modelo{
     width: 60%;
-    height: 90%;
-    margin-left: 150px;
-    margin-right: 10px;
-    background: brown;
-    border: 10px groove rgb(209, 124, 27);
+    
 }
-.textoropa{
-   border: 2px groove mediumorchid;
-   padding-bottom: 20px;
-   padding-top: 10px;
-   padding-left: 10px;
-   margin-bottom: auto;
-   border-radius: 3px;
+
+
+
+.marca{
+    width: 100%;
+}
+
+.seccion3{
+    grid-column: 4 / 5;
+    border: 5px solid goldenrod;
+}
+
+.marca{
+    width: 60%;
+    border: 4px groove indianred ;
+    border-radius: 3%;
+}
+
+
+        /*----------Pagina de Ropa-----------*/
+
+.principalcontenedor{
+    display: grid;
+    grid-template-columns: 35% 45% 200px;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 20px;
+    background: cadetblue;
+}
+
+.principalheader{
+    grid-column: 1 / 4;
     text-align: center;
-   
+    font-size: 50px;
+    border: 10px groove crimson;
+    margin: auto;
+    margin-top: 20px;
 }
-.anuncio{
-    margin-left: 10%;
+
+.principalanuncio{
+    height: 300px;
+    width: 100%;
+    margin-right: 50px;
+    grid-column: 3 / 4;
+}
+
+.principalseccion1{
+    margin-left:  20px;    
+}
+
+.principalseccion1 h2{
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.principalimagen{
+    
     width: 80%;
     height: 250px;
+}
+
+.principalseccion2{
+    text-align:center;
+    align-self: center;
+    border: 10px groove purple;
+}
+
+@media (max-width:428px){
+    /* Aquí van todos los estilos CSS */
+
+    .principalcontenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(12, auto);
+    }
+    .principalheader{
+        text-align: center;
+        font-size:20px;
+        grid-column: 1 / 2;
+
+    }
+    .principalseccion1{
+        grid-column: 1 / 3;
+        align-items: center;
+        margin-right: 60px;
+    }
+    .principalseccion2{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
+        margin-left: 20px;
+    }
+    
+    
+    .principalanuncio{
+        grid-column: 2 / 2;
+        margin-right: 50px;
+        width: 80%;
+        height: 250px;
+        align-self: center;
+    }
 }
 
 
@@ -232,4 +250,7 @@ h2{
     margin-left: 10%;
     width: 80%;
     height: 250px;
+    margin-left: 60px;
+    
 }
+
