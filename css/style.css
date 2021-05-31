@@ -201,8 +201,7 @@
 .principalimagen{
     
     width: 80%;
-    margin-left: 60px;
-    
+    height: 250px;
 }
 
 .principalseccion2{
@@ -214,6 +213,7 @@
 
 
 @media (max-width:478px){
+
     /* Aquí van todos los estilos CSS */
 
     .principalcontenedor{
@@ -271,3 +271,43 @@
         visibility: hidden;
     }
 }
+
+
+
+
+
+
+/*Css de Mauricio*/
+.bisuteriajoyasrelojes {
+    display: grid;
+    grid-template-columns: 500px 500px 200px;
+    grid-gap: 20px;
+}
+
+.imagenbisuteriareloj {
+    width: 60%;
+    height: 90%;
+    margin-left: 150px;
+    margin-right: 10px;
+    background: brown;
+    border: 10px groove rgb(209, 124, 27);
+}
+
+.textobisuteriajoyasrelojes {
+    border: 2px groove mediumorchid;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: auto;
+    border-radius: 3px;
+     text-align: center;
+}
+
+.spam {
+    margin-left: 10%;
+    width: 80%;
+    height: 250px;
+    margin-left: 60px;
+    
+}
+
