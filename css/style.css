@@ -70,6 +70,7 @@
     /*Zapatillas-Deportivas.html*/
 
 .contenedor{
+    font-family: PredigeRoundedPanic;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, auto);
