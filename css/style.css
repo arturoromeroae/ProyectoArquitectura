@@ -342,6 +342,8 @@ body{
 
 
 
+
+
 /*Css de Mauricio*/
 .bisuteriajoyasrelojes {
     display: grid;
@@ -369,7 +371,12 @@ body{
 }
 
 .spam {
+    display: none;
+    visibility:hidden;
     margin-left: 10%;
+}
+
+.bisuteriapulsera {
     width: 80%;
     height: 250px;
 }
