@@ -4,9 +4,112 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Inicio</title>
+        <link rel = "icon" type = "image/png" href = "../images/mstile-144x144.png">
+
     </head>
     <body>
-        
+        <!-- barra de busqueda -->
+        <nav>
+            <div class="barraBusqueda">
+              <input type="text">
+              <button type="submit">Buscar</button>
+            </div>
+            <!-- menu principal -->
+            <div class="menuPrincipal">
+              <a class="active" href="./index.html">
+                <i class="fa fa-fw fa-home"></i>
+                Inicio
+              </a>
+              <a href="./quienes-somos.html">
+                <i class="fa fa-fw fa-address-card"></i>
+                ¿Quienes Somos?
+              </a>
+              <a href="./productos.html">
+                <i class="fa fa-shopping-bag"></i>
+                Productos
+              </a>
+              <a href="./servicios.html">
+                <i class="fa fa-bell"></i>
+                Servicios
+              </a>
+              <a href="./contactanos.html">
+                <i class="fa fa-phone"></i>
+                Contáctanos
+              </a>
+            </div>
+          </nav>
+
+          <div class="carousel">
+            <div class="carousel-inner">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item">
+                    <img src="../images/Inicio/new.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="../images/Inicio/new.jpg">
+                </div>
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="../images/Inicio/new.jpg">
+                </div>
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">•</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="">
+            <a href="">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter"></i>
+            </a>
+  
+            <div id="menucontainer">
+              <a href="">
+                Inicio
+              </a>
+              <a href="./quienes-somos.html">
+                ¿Quienes Somos?
+              </a>
+              <a href="./productos.html">
+                Productos
+              </a>
+              <a href="./servicios.html">
+                Servicios
+              </a>
+              <a class="active" href="./contactanos.html">
+                Contáctanos
+              </a>
+            </div>
+  
+            <div id="integrantes">
+              ©AJEM
+            </div>
+        </footer>
     </body>
 </html>
