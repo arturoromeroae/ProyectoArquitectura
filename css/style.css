@@ -4,11 +4,10 @@
 
 body{
     margin: 0;
-    background-color: #00d199;
 }
 
 .menuPrincipal{
-    background-color: #00ffbb;
+    background-color: white;
     overflow: auto;
 }
 
@@ -26,14 +25,14 @@ body{
 }
 
 .menuPrincipal a.active {
-    background-color: #ff4870;
+    background-color: #426edb;
     color: white;
 }
 
 .barraBusqueda{
     text-align: right;
     overflow: hidden;
-    background-color: #00ffbb;
+    background-color: white;
 }
 
 .barraBusqueda input {
@@ -49,48 +48,104 @@ body{
     padding: 6px;
     margin-top: 8px;
     margin-right: 16px;
-    background: #ff4870;
+    background: #426edb;
     font-size: 17px;
     border: none;
     cursor: pointer;
 }
 
-#bannercontacto{
-    background-color: #ff4870;
+#contenedor{
     display: flex;
 }
 
-.triangle-down {
-	width: 0px;
-	height: 0px;
-	border-left: 0px solid transparent;
-	border-right: 1350px solid transparent;
-	border-top: 80px solid #ff4870;
+#titulocontactato{
+    text-align: center;
 }
 
-#titulocontactato {
-    margin-left: 15%;
-    margin-top: 10%;
-    font-size: 40px;
+#imagen{
+    margin-top: 8%;
+    width: 50%;
+}
+
+#formulario{
+    width: 50%;
+    margin-top: 40px;
+    background-color: #7cddee;
+    border-radius: 50px;
+    margin-right: 100px;
+}
+
+#formulario form{
+    padding: 50px;
+}
+
+#formulario input, textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formulario input[type=submit] {
+    width: 100%;
+    background-color: #426edb;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#formulario input[type=submit]:hover {
+    background-color: rgb(163, 162, 162);
+    color: black;
+}
+
+#fondocontacto{
+    width: 70%;
+}
+
+footer{
+    display: flex;
+    background-color: #426edb;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.fa{
+    padding: 20px;
+    font-size: 30px;
+    padding-inline: 5px;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
     color: white;
 }
 
-#imgcontacto{
-    float: left;
+#menucontainer{
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 25%;
 }
 
-#image-contact{
-    padding-top: 5%;
-    padding-left: 10%;
+#menucontainer a{
+    padding-inline: 10px;
+    text-decoration: none;
 }
 
-#textocontacto {
-    padding-left: 30%;
-    padding-right: 15%;
-    padding-top: 2%;
-    margin-bottom: 0;
+#integrantes{
+    margin-top: 25px;
+    margin-left: 25%;
 }
-
                             /*------------------Parte de Enzo -------------------*/
                             /*---------------------------------------------------*/
 
