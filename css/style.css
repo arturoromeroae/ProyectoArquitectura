@@ -270,39 +270,49 @@ footer a:hover {
     
     /*El tercer nivel*/
 
-.contenedor{
-    font-family: PredigeRoundedPanic;
+
+#contenedor{
+    
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(12, auto);
-    text-align: center;
-    
-    
-    grid-gap: 10px;
-}
-.titulo{
-    text-align: center;
-    grid-column: 1 / 5;
-    margin-top: 40px;
-    margin: auto;
-    
-    font-size: 50px;
     
 }
 
-.seccion1{
-    
+aside{
     grid-column: 1 / 1;
+    background-color: teal;
+    position: fixed;
+    height: 100%;
+    width: 150px;
+    justify-items: center;
+}
+.principal{
+    margin-left: 150px;
+    grid-template-rows: repeat(20, auto);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    border: 10px solid yellowgreen ;
+    margin-bottom: 10px;
+    
+}
+.titulogeneral{
+    grid-column: 1 / 5;
+    text-align: center;
+}
+.titulo{
+    grid-column: 1 / 6;
+    text-align: center;
+    font-size: 30px;
+}
+.seccion1{
+    grid-column: 1 / 2;
     text-align: justify;
     margin-left: 10%;
-    margin-right: 0px;
-    font-size: 20px;
 }
 
 .seccion2{
-    
     grid-column: 2 / 4;
-    
+    justify-items: center;
+    display: grid;
 }
 .seccion2 h2{
     
@@ -315,21 +325,25 @@ footer a:hover {
     
 }
 
+.tiendas{
+    grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 
-
+}
 .marca{
-    
+   
     width: 60%;
     margin: 5%;
-    align-items: center;
 }
 
 
 .seccion3{
-    grid-column: 4 / 5;
+    grid-column: 4 / 4;
     text-align: justify;
     margin-right: 10%;
-    font-size: 20px;
+    
 }
 .seccion3 img{
     width: 70%;
