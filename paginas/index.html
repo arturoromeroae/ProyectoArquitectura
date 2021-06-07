@@ -8,8 +8,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/style.css">
         <title>Inicio</title>
-        <link rel = "icon" type = "image/png" href = "../images/mstile-144x144.png">
-
     </head>
     <body>
         <!-- barra de busqueda -->
@@ -43,112 +41,113 @@
             </div>
         </nav>
 
-        <div class="carousel">
-            <div class="carousel-inner">
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                <div class="carousel-item">
+        <!-- carrusel -->
+        <div class="carrusel">
+            <div class="carrusel-dentro">
+                <input class="carrusel-mostrar" type="radio" id="carrusel-1" name="carrusel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carrusel-pantalla">
                     <img src="../images/Inicio/new.jpg">
                 </div>
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
+                <input class="carrusel-mostrar" type="radio" id="carrusel-2" name="carrusel" aria-hidden="true" hidden="">
+                <div class="carrusel-pantalla">
                     <img src="../images/Inicio/new.jpg">
                 </div>
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
+                <input class="carrusel-mostrar" type="radio" id="carrusel-3" name="carrusel" aria-hidden="true" hidden="">
+                <div class="carrusel-pantalla">
                     <img src="../images/Inicio/new.jpg">
                 </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
-                <ol class="carousel-indicators">
+                <label for="carrusel-3" class="carrusel-boton anterior boton-1">‹</label>
+                <label for="carrusel-2" class="carrusel-boton siguiente boton-1">›</label>
+                <label for="carrusel-1" class="carrusel-boton anterior boton-2">‹</label>
+                <label for="carrusel-3" class="carrusel-boton siguiente boton-2">›</label>
+                <label for="carrusel-2" class="carrusel-boton anterior boton-3">‹</label>
+                <label for="carrusel-1" class="carrusel-boton siguiente boton-3">›</label>
+                <ol class="carrusel-indicador">
                     <li>
-                        <label for="carousel-1" class="carousel-bullet">•</label>
+                        <label for="carrusel-1" class="carrusel-punto">•</label>
                     </li>
                     <li>
-                        <label for="carousel-2" class="carousel-bullet">•</label>
+                        <label for="carrusel-2" class="carrusel-punto">•</label>
                     </li>
                     <li>
-                        <label for="carousel-3" class="carousel-bullet">•</label>
+                        <label for="carrusel-3" class="carrusel-punto">•</label>
                     </li>
                 </ol>
             </div>
         </div>
 
+        <!-- tarjetas -->
         <div>
             <br>
+            <!-- titulo de productos destacados -->
             <h1 id="titulodestacado" class="textocentrado">Productos Destacados</h1>
             <div class="contenedortarjetas">
 
-                <div class="card">
+                <!-- primera tarjeta -->
+                <div class="tarjeta">
                     <img src="../images/Inicio/ropa1.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                    <div class="contenedortarjeta">
+                        <h4><strong>Jeans Lee®</strong></h4>
+                        <p>Jeans Lee® de diferentes colores y estilos...</p>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="../images/Inicio/ropa2.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                
+                <!-- segunda tarjeta -->
+                <div class="tarjeta">
+                    <img src="../images/Inicio/puma-neymar-jr-future-football-mens-t-shirt-white-pma2927w-0f7.jpg" alt="Avatar" style="width:100%">
+                    <div class="contenedortarjeta">
+                        <h4><strong>Polos Puma®</strong></h4>
+                        <p>Polos Puma® con diferentes colores y diseños...</p>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="../images/Inicio/ropa2.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                
+                <!-- tercera tarjeta -->
+                <div class="tarjeta">
+                    <img src="../images/Inicio/ropa3.jpg" alt="Avatar" style="width:100%">
+                    <div class="contenedortarjeta">
+                        <h4><strong>Vestidos</strong></h4>
+                        <p>Todo en vestidos para damas de diferentes marcas...</p>
                     </div>
                 </div>
-    
-                <div class="card">
-                    <img src="../images/Inicio/ropa2.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>John Doe</b></h4>
-                        <p>Architect & Engineer</p>
+                
+                <!-- cuarta tarjeta -->
+                <div class="tarjeta">
+                    <img src="../images/Inicio/accessories-smythson_1615908520.png" alt="Avatar" style="width:100%">
+                    <div class="contenedortarjeta">
+                        <h4><strong>Accesorios</strong></h4>
+                        <p>Relojes, correas, pulseras y más, todo para acompañar tus outfits...</p>
                     </div>
                 </div>
     
             </div>
         </div>
 
+        <!-- tarjeta larga con imagen a la izquierda -->
         <div id="informacionrapidaizquierda" class="pantallaflexible">
             <div class="">
-                <img class="borderedondo" src="../images/Inicio/tie-690084.jpg" width="100%" alt="">
+                <img class="borderedondo" src="../images/Inicio/tie-690084.jpg" width="75%" alt="">
             </div>
             <div class="parrafoinformacionrapidaizquierda">
-                <h2 class="textocentrado textoblanco">Sobre Nuestros Productos</h2>
+                <h2 class="textocentrado textoblanco">Sobre los Productos que Tenemos.</h2>
                 <p class="textoblanco">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quae, soluta alias quam, quas impedit hic unde totam 
-                    excepturi maxime, incidunt est eum provident placeat repellendus 
-                    consequatur expedita explicabo neque.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quae, soluta alias quam, quas impedit hic unde totam 
-                    excepturi maxime, incidunt est eum provident placeat repellendus 
-                    consequatur expedita explicabo neque.
+                    Los productos que ofrecemos son de la mejor calidad, realizamos 
+                    una búsqueda en todos los sitios webs y tiendas físicas para ofrecerte 
+                    una gran variedad de opciones. ¡Así que haz click en el botón "Ver más" 
+                    y ve todos los productos que tenemos para ofrecerte!...
                 </p>
                 <button class="botoninformacionrapidaizquierda">Ver más</button>
             </div>
         </div>
         
+        <!-- tarjeta larga con imagen a la derecha -->
         <div id="informacionrapidaderecha">
             <div class="parrafoinformacionrapidaderecha">
                 <h2 id="titulodestacadoizquierda" class="textoizquierda">Sobre Nosotros</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quae, soluta alias quam, quas impedit hic unde totam 
-                    excepturi maxime, incidunt est eum provident placeat repellendus 
-                    consequatur expedita explicabo neque.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Minima quae, soluta alias quam, quas impedit hic unde totam 
-                    excepturi maxime, incidunt est eum provident placeat repellendus 
-                    consequatur expedita explicabo neque.
+                    Somos una empresa con la vision de ofrecerte el mejor servicio y los 
+                    mejores productos. Basamos nuestra búsqueda de productos en base a la 
+                    calidad y a los estándares de nuestros consumidores. Si quieres saber más 
+                    de nosotros visita nuestra página "¿Quiénes Somos?" para leer más...
                 </p>
                 <button class="botoninformacionrapidaderecha">Leer más</button>
             </div>

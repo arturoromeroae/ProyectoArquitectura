@@ -1,40 +1,50 @@
+/* estilos globales */
 *{
     font-family: sans-serif;
 }
 
+/* estilos para el body de todas las paginas */
 body{
     margin: 0;
 }
 
+/* estilos para centrar los textos */
 .textocentrado{
     text-align: center;
 }
 
+/* estilos para colocar fondo azul */
 .fondoazul{
     background-color: #426edb;
 }
 
+/* estilo para colocar elementos flexibles */
 .pantallaflexible{
     display: flex;
 }
 
+/* estilo para colocar elemento como bloques */
 .pantallabloque{
     display: block;
 }
 
+/* clase para colocar bordes redondeados */
 .borderedondo{
     border-radius: 10px;
 }
 
+/* clase para colocar cualquier texto blanco */
 .textoblanco{
     color: white;
 }
 
+/* estilos para el contenedor del menu */
 .menuPrincipal{
     background-color: white;
     overflow: auto;
 }
 
+/* estilos para los links del menu */
 .menuPrincipal a {
     float: left;
     color: black;
@@ -43,22 +53,26 @@ body{
     font-size: 17px;
 }
 
+/* estilos para cuando el mouse este encima de los links del menu */
 .menuPrincipal a:hover {
     background-color: rgb(163, 162, 162);
     color: white;
 }
 
+/* estilos para cuando una de las pagina del link se este viendo */
 .menuPrincipal a.active {
     background-color: #426edb;
     color: white;
 }
 
+/* estilos para el contenedor de la barra de busqueda del menu */
 .barraBusqueda{
     text-align: right;
     overflow: hidden;
     background-color: white;
 }
 
+/* estilos para el input de la barra de busqueda del menu */
 .barraBusqueda input {
     padding: 6px;
     margin-top: 8px;
@@ -67,6 +81,7 @@ body{
     background-color: #f5f5f5;
 }
 
+/* estilos para el boton de la barra de busqueda del menu */
 .barraBusqueda button {
     float: right;
     padding: 6px;
@@ -78,19 +93,23 @@ body{
     cursor: pointer;
 }
 
+/* estilos para el contenedor de la pagina de contacto */
 #contenedorcontacto{
     display: flex;
 }
 
+/* estilos para el titulo de la pagina de contacto */
 #titulocontactato{
     text-align: center;
 }
 
+/* estilos para el contenedor de la imagen contactanos */
 #imagen{
     margin-top: 8%;
     width: 50%;
 }
 
+/* estilos para el contenedor del formulario */
 #formulario{
     width: 50%;
     margin-top: 40px;
@@ -99,10 +118,12 @@ body{
     margin-right: 100px;
 }
 
+/* estilos para la etiqueta form */
 #formulario form{
     padding: 50px;
 }
 
+/* estilos para los inputs y el textarea del formulario de contacto */
 #formulario input, textarea{
     width: 100%;
     padding: 12px 20px;
@@ -113,6 +134,7 @@ body{
     box-sizing: border-box;
 }
 
+/* estilos para los inputs del formulario de contacto */
 #formulario input[type=submit] {
     width: 100%;
     background-color: #426edb;
@@ -125,15 +147,18 @@ body{
     font-size: 30px;
 }
 
+/* estilos cuando el mpuse esta encima del boton formulario */
 #formulario input[type=submit]:hover {
     background-color: rgb(163, 162, 162);
     color: black;
 }
 
+/* estilos para la imagen de contactanos */
 #fondocontacto{
     width: 70%;
 }
 
+/* estilos para el footer */
 footer{
     display: flex;
     background-color: #426edb;
@@ -141,68 +166,80 @@ footer{
     margin-top: 30px;
 }
 
+/* estilo para todos los iconos con esta clase */
 .fa{
     padding: 20px;
     font-size: 30px;
     padding-inline: 5px;
 }
 
+/* estilo para los links del footer */
 footer a {
     color: black;
 }
 
+/* estilos cuando el mouse esta encima de los links */
 footer a:hover {
     color: white;
 }
 
+/* estilos para el menu del footer */
 #menucontainer{
     text-align: center;
     margin-top: 25px;
     margin-left: 20%;
 }
 
+/* estilos para el menu del footer cuando el mouse esta encima */
 #menucontainer a{
     padding-inline: 10px;
     text-decoration: none;
 }
 
+/* estilos para el texto donde aparecen las iniciales del grupo en el footer */
 #integrantes{
     margin-top: 25px;
     margin-left: 25%;
 }
-  
-.carousel {
+
+/* estilos del contenedor de todo el carrusel */
+.carrusel {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin-top: 26px;
 }
 
-.carousel-inner {
+/* estilos para el carrusel */
+.carrusel-dentro {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.carousel-open:checked + .carousel-item {
+/* estilos para el input que esta seleccionado y para la pantalla que se muestre */
+.carrusel-mostrar:checked + .carrusel-pantalla {
     position: static;
     opacity: 100;
 }
 
-.carousel-item {
+/* estilos para todas los items del carrusel */
+.carrusel-pantalla {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
     transition: opacity 0.6s ease-out;
 }
 
-.carousel-item img {
+/* estilos para todas las imagenes de los items del carrusel */
+.carrusel-pantalla img {
     display: block;
     height: auto;
     width: 100%;
     height: 600px;
 }
 
-.carousel-control {
+/* estilo para los botones del carrusel */
+.carrusel-boton {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -222,26 +259,31 @@ footer a:hover {
     z-index: 10;
 }
 
-.carousel-control.prev {
+/* estilos para el boton de atras carrusel */
+.carrusel-boton.anterior {
     left: 2%;
 }
 
-.carousel-control.next {
+/* estilos para el boton de siguiente carrusel */
+.carrusel-boton.siguiente {
     right: 2%;
 }
 
-.carousel-control:hover {
+/* estilos al estar el mouse encima del boton carrusel */
+.carrusel-boton:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+/* estilos para los radio buttons cuando estan seleccionados */
+#carrusel-1:checked ~ .boton-1,
+#carrusel-2:checked ~ .boton-2,
+#carrusel-3:checked ~ .boton-3 {
     display: block;
 }
 
-.carousel-indicators {
+/* estilos de indicador de item en carrusel */
+.carrusel-indicador {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -253,66 +295,60 @@ footer a:hover {
     z-index: 10;
 }
 
-.carousel-indicators li {
+/* estilos de los "li" de indicador de item en carrusel */
+.carrusel-indicador li {
     display: inline-block;
     margin: 0 5px;
 }
 
-.carousel-bullet {
+/* estilos para el punto que indica el item carrusel */
+.carrusel-punto {
     color: #fff;
     cursor: pointer;
     display: block;
     font-size: 35px;
 }
 
-.carousel-bullet:hover {
+/* estilos cuando el mouse esta encima del punto que indica el item carrusel */
+.carrusel-punto:hover {
     color: #aaaaaa;
 }
 
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+/* estilos para los radio buttons cuando estan seleccionados */
+#carrusel-1:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#carrusel-2:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#carrusel-3:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto {
     color: #428bca;
 }
 
-#title {
-    width: 100%;
-    position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
-}
-
+/* contenedor para para las tarjetas */
 .contenedortarjetas{
     display: flex;
 }
 
-.card {
-    /* Add shadows to create the "card" effect */
+.tarjeta {
+    /* efectos de sombra para las tarjetas */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin: 10px;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-  }
+}
 
+/* efecto cuando el mouse esta encima */
+.tarjeta:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* padding dentro de las tarjetas */
+.contenedortarjeta {
+    padding: 2px 16px;
+}
+
+/* titulo para los productos destacados */
 #titulodestacado{
     font-size: 50px;
 }
 
+/* tarjeta larga con imagen a la izquierda */
 #informacionrapidaizquierda{
     background-color: #426edb;
     margin: 20px;
@@ -322,11 +358,13 @@ footer a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* parrafo de tarjeta larga con imagen a la izquierda */
 .parrafoinformacionrapidaizquierda{
     padding-top: 5%;
     padding-inline: 5%;
 }
 
+/* boton de tarjeta larga con imagen a la izquierda */
 .botoninformacionrapidaizquierda{
     margin-left: 40%;
     background-color: transparent;
@@ -336,11 +374,13 @@ footer a:hover {
     color: white;
 }
 
+/* efecto (mouse encima) boton de tarjeta larga con imagen a la izquierda */
 .botoninformacionrapidaizquierda:hover{
     color: black;
     cursor: pointer;
 }
 
+/* tarjeta larga con imagen a la derecha */
 #informacionrapidaderecha{
     background-color: white;
     margin: 20px;
@@ -351,6 +391,7 @@ footer a:hover {
     display: flex;
 }
 
+/* boton de tarjeta larga con imagen a la izquierda */
 .botoninformacionrapidaderecha{
     margin-left: 40%;
     background-color: transparent;
@@ -361,27 +402,32 @@ footer a:hover {
     margin-bottom: 2%;
 }
 
+/* efecto (mouse encima) boton de tarjeta larga con imagen a la izquierda */
 .botoninformacionrapidaderecha:hover{
     color: gray;
     cursor: pointer;
 }
 
+/* parrafo de tarjeta larga con imagen a la derecha */
 .parrafoinformacionrapidaderecha{
-    padding-top: 0;
+    padding-top: 2%;
     padding-inline: 10%;
 }
 
+/* imagen de tarjeta larga con imagen a la derecha */
 .imagenderecha{
-    width: 100%;
+    width: 70%;
     padding-top: 1%;
 }
 
+/* parrafo de tarjeta larga con imagen a la derecha */
 .textoizquierda{
-    width: 60%;
+    width: 30%;
 }
 
+/* título de tarjeta larga con imagen a la izquierda */
 #titulodestacadoizquierda{
-    margin-left: 37%;
+    margin-left: 40%;
 }
   
                             /*------------------Parte de Enzo -------------------*/
@@ -503,10 +549,6 @@ aside{
 
     .seccion1{
         grid-column: 1 / 2;
-        
-        
-    }
-    .seccion2{
         
         
     }
