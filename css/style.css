@@ -441,15 +441,16 @@ footer a:hover {
 #contenedor{
     grid-template-columns: 1fr;
     display: grid;
-    background-color: rgb(141, 145, 167);
+    background-color: rgb(217, 222, 245);
     
 }
 
 aside{
+    margin-top: 5px;
     grid-column: 1 / 1;
     background-color: #4879f7;
     position: fixed;
-    height: 83%;
+    height: 76%;
     width: 150px;
     border: 1px solid black;
     border-radius: 2px;
@@ -464,7 +465,7 @@ aside{
     font-size: 120%;
     border: 1px solid black;
     background-color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 40px;
     padding: 5px;
 }
@@ -474,7 +475,7 @@ ul{
     margin-left: 10px;
     margin-right: 5px;
     border-radius: 8px;
-    font-size: 90%;
+    font-size: 80%;
     padding-left: 25px;
     
 }
@@ -487,7 +488,7 @@ li{
     grid-template-rows: repeat(20, auto);
    
     
-    background-color: ghostwhite;
+    background-color: #4879f7 ;
     margin-bottom: 10px;
     
     
@@ -510,7 +511,7 @@ li{
 section{
     margin: 20px;
     grid-column: 1 / 5;
-    background-color: #4879f7;
+    background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     border: 1px solid black;
@@ -522,8 +523,8 @@ section{
     text-align: justify;
     margin-left: 10%;
     margin-right: 10%;
-    justify-items: center;
-    display: grid;
+    align-self: center;
+    
 }
 .seccion1 h3{
     margin: 0;
@@ -574,11 +575,11 @@ section{
     grid-column: 4 / 4;
     text-align: justify;
     margin-right: 10%;
-    justify-items: center;
-    display: grid;
+    align-self: center;
 }
 .seccion3 img{
     width: 80%;
+    align-items: center;
 }
 
 @media (max-width:478px){
