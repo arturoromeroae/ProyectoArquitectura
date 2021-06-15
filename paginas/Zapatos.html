@@ -45,8 +45,8 @@
         <div id="contenedor">
 
             <div id="sidebar">
-                <input type="checkbox" id="click">
-                <div class="boton">
+                <input class="boton" type="checkbox" id="click">
+                <div class="disenioboton">
                     <label for="click">
                         <span></span>
                         <span></span>
@@ -54,15 +54,109 @@
                     </label>
                 </div>
                 <ul>
-                    <li><a class="atajos" href="#casuales">Casuales</a></li>
-                    
-                    <li><a class="atajos" href="#elegante">Elegante</a></li>
-                    
                     <li><a class="atajos" href="#deportivas">Deportivas</a></li>
+                    <li><a class="atajos" href="#casuales">Casuales</a></li>
+                    <li><a class="atajos" href="#elegante">Elegante</a></li>
                 </ul>
             </div>
             
+            <main class="principal">
+                <h2 id="deportivas" class="titulogeneral">Deportivas</h2>
+                <section>
+                    <h5>Oferta</h5>
+                    <h1 class="titulo">Adidas Duramo</h1>
+            
 
+                    <!--Parte de las especificaciones-->
+
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Modelo: B96579</li>
+                                <li>Peso: 281g</li>
+                                <li>Tipo de arco: Normal</li>
+                                <li>Cierre de pasadores con ojales reforzados</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Zapatos/ZapatillasDeportes/Adidas Duramo Transparente.webp" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <img src="../images/Estrellas de Valoracion/Cuatro Estrellas.png" alt="Imagen no encontrada">
+                        <h2>Reseñas</h2>
+                        <p><em>
+                            "A sido lo mejor para deportes extremos, pero su duración no es de largo"
+                        </em></p>
+                        
+
+                    </div>
+
+                    
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
+                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                    </div>
+                </section> 
+                
+            <!--Parte 2-->
+                <section>
+                    <h1 class="titulo">Adidas Galaxy 5</h1>
+
+                    <!--Parte de las especificaciones-->
+
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Modelo: FW5717</li>
+                                <li>Zapatillas de running transpirables</li>
+                                <li>Diseño liviano</li>
+                                <li>Horma clásica</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Zapatos/ZapatillasDeportes/Puma Activate Transparente.png" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <img src="../images/Estrellas de Valoracion/Una estrella.png" alt="Imagen no encontrada">
+                        <h2>Reseñas</h2>
+                        <p><em>
+                            "Cae demasiado rápido en la puntera. Por tal motivo, molesta al caminar, presiona más los dedos"
+                        </em></p>
+                        
+
+                    </div>
+
+                    
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
+                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                    </div>
+                </section>
+
+            
+            </main>
             <main class="principal">
                 <h2 id="casuales" class="titulogeneral">Casuales</h2>
                 <section>
@@ -74,9 +168,12 @@
                     <div class="seccion1">
                         <h1>Especificaciones</h1>
                         <p>
-                            Modelo: FD-013 <br>
-                            
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
+                            <ul>
+                                <li>Suela de caucho</li>
+                                <li>Capellada de cuero</li>
+                                <li>Cuello acolchado</li>
+                                <li>Suela antidelizante</li>
+                            </ul>
                         </p>
                     </div>
                     
@@ -90,10 +187,23 @@
 
                     <!--Parte de las reseñas-->
                     <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
+                        <form id="valoracion">
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                          </form>
                         <h1>Reseñas</h1>
                         <p>
-                        <i>"Esperaba mucho más, pero me previene de muchos accidente poe su suela" </i>
+                        <em>"Esperaba mucho más, pero me previene de muchos accidente poe su suela" </em>
                         </p>
                         
 
@@ -104,7 +214,7 @@
                         <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
                         <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
                         <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca4" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
                     </div>
                 </section>
             
@@ -117,9 +227,12 @@
                     <div class="seccion1">
                         <h1>Especificaciones</h1>
                         <p>
-                            Modelo: Dauss 9410 <br> 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
+                            <ul>
+                                <li>Modelo: 3J235C</li>
+                                <li>Hecho a Canvas</li>
+                                <li>Suela textil</li>
+                                
+                            </ul>
                         </p>
                     </div>
                     
@@ -136,7 +249,9 @@
                         <img src="../images/Estrellas de Valoracion/Una estrella.png" alt="Imagen no encontrada">
                         <h1>Reseñas</h1>
                         <p>
-                            <i>"A mi hijo le gusto bastante, en la escuela hablan de la duración de ello, sigue duranto ya voy por los 5 años "</i>
+                            <em>A mi hijo ñe gusto bastante, en la escuela hablan de la duración 
+                                de ello, sigue durando hasta por 5 años, Guau"
+                            </em>
                         </p>
                         
 
@@ -147,96 +262,12 @@
                         <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
                         <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
                         <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
                     </div>
                 </section>
 
-                <section>
-                    <h2 class="titulo">Catterpillar Pascala</h2>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Modelo: RCF-02l17 <br>
-                            Diseñada para uso de mujeres
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatos/Zapatos Casuales/Caterpillar Pascala.jpg" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Tres Estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            <br>
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
-                <section>
-                    <!--Parte 4-->
-                    <h2 class="titulo">Dauss</h2>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Modelo: Dauss 1302 <br> 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatos/Zapatos Casuales/Dauss 1302A.jpg" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
+                
+               
             </main>
 
             
@@ -247,14 +278,17 @@
 
             <!--Parte de las especificaciones-->
                 <section>
-                    <h2 class="titulo">Calimod</h2>
+                    <h2 class="titulo">Renzo Renzini</h2>
 
                     <div class="seccion1">
                         <h1>Especificaciones</h1>
                         <p>
-                            Modelo: FD-013 <br>
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
+                            <ul>
+                                <li>Modelo: RCF-02l17</li>
+                                <li>Capellada de cuero</li>
+                                <li>Cuello acolchado</li>
+                                <li>Suela antidelizante</li>
+                            </ul>
                         </p>
                     </div>
                 
@@ -271,9 +305,7 @@
                         <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
                         <h2>Reseñas</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
+                            <em>"El sintetico no me gusto, se me desgato rápido</em>
                         </p>
                         
 
@@ -284,21 +316,24 @@
                         <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
                         <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
                         <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
                     </div>
                 </section>
             <!--Parte 2-->
                 <section>
-                    <h2 class="titulo">Dauss Hombre</h2>
+                    <h2 class="titulo">Calimod</h2>
 
                     <!--Parte de las especificaciones-->
 
                     <div class="seccion1">
                         <h1>Especificaciones</h1>
                         <p>
-                            Modelo: Dauss 9410 <br> 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
+                            <ul>
+                                <li>Modelo: FD-013</li>
+                                <li>Material de la planta: Sintetico</li>
+                                <li>Rango de tallas: 39-43</li>
+                                
+                            </ul>
                         </p>
                     </div>
                     
@@ -315,9 +350,7 @@
                         <img src="../images/Estrellas de Valoracion/Una estrella.png" alt="Imagen no encontrada">
                         <h2>Reseñas</h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
+                            <em>"Recomendado, buen sopporte para piernas, combina con cualquier ropa"</em>
                         </p>
                         
 
@@ -328,287 +361,14 @@
                         <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
                         <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
                         <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
                     </div>
 
                 </section>
 
 
-            <!--Parte 3-->
-                <section>
-                    <h2 class="titulo">Renzo Renzini</h2>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Modelo: RCF-02l17 <br>
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatos/Zapatos de Vestir/Renzo Renzini RCF-02l17.jpg" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Tres Estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            <br>
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
-            <!--Parte 4-->
-                <section>
-                    <h2 class="titulo">Renzo Renzini</h2>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Modelo: RCF-02l19 <br> 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatos/Zapatos de Vestir/Renzo Renzini RCF-02l19.jpg" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
-            </main>
             
-
-
-            <main class="principal">
-                <h2 id="deportivas" class="titulogeneral">Deportivas</h2>
-                <section>
-                    <h1 class="titulo">Adidas Duramo</h1>
-            
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatillas/ZapatillasDeportes/EE7922-zapatillas-baratas-adidas-correr-duramo-9-hombre-azul-1.webp" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Cuatro Estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section> 
-                
-            <!--Parte 2-->
-                <section>
-                    <h1 class="titulo">Adidas Galaxy 5</h1>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatillas/ZapatillasDeportes/Adidas Galaxy 5.webp" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Una estrella.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
-
-            <!--Parte 3-->
-                <section>
-                    <h2 class="titulo">Puma Activate</h2>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatillas/ZapatillasDeportes/Puma Activate Transparente.png" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Tres Estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
-            <!--Parte 4-->
-                <section>
-                    <h1 class="titulo">Puma Extractor</h1>
-
-                    <!--Parte de las especificaciones-->
-
-                    <div class="seccion1">
-                        <h1>Especificaciones</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repellendus, voluptate? Consequatur expedita ducimus ipsa asperiores voluptas? Similique blanditiis a reiciendis perspiciatis
-                            magnam saepe sapiente quas, voluptates facere expedita incidunt deleniti?
-                        </p>
-                    </div>
-                    
-                    <!--Parte del Modelo junto al precio-->
-                    <div class="seccion2">
-
-                        <img class="modelo" src="../images/Zapatillas/ZapatillasDeportes/Puma Extractor.jpg" alt="Imagen no encontrada">
-
-                        <h2>Precio</h2>
-                    </div>
-
-                    <!--Parte de las reseñas-->
-                    <div class="seccion3">
-                        <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
-                        <h2>Reseñas</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            In eius itaque optio delectus est, provident aut placeat sequi vel cumque vitae repudiandae consequatur! 
-                            Tempore unde, reiciendis in consequuntur magni reprehenderit.
-                        </p>
-                        
-
-                    </div>
-
-                    
-                    <div class="tiendas">
-                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
-                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
-                        <img class="marca" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
-                    </div>
-                </section>
             </main>
-
-
         </div>
 
         <!-- Footer -->
