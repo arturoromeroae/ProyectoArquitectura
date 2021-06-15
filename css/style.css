@@ -467,6 +467,10 @@ footer a:hover {
     margin-bottom: 3%;
 }
 
+.iconocirculo a{
+    text-decoration: none;
+}
+
 .logoscirculos:hover{
     cursor: pointer;
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
@@ -478,6 +482,15 @@ footer a:hover {
 
 #tituloequipo{
     padding-top: 50px;
+}
+
+.socialiconos{
+    color: black;
+    text-decoration: none;
+}
+
+.socialiconos:hover{
+    color: #426edb;
 }
 
   
