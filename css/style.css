@@ -42,6 +42,10 @@ body{
     color: white;
 }
 
+.borde{
+    border: 2px solid;
+}
+
 /* estilos para el contenedor del menu */
 .menuPrincipal{
     background-color: white;
@@ -461,6 +465,7 @@ footer a:hover {
     padding: 30px;
     border-radius: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    color: #000;
 }
 
 .tarjetalogos{
@@ -493,6 +498,139 @@ footer a:hover {
 
 .socialiconos:hover{
     color: #426edb;
+}
+
+/* banner servicio */
+/* Container holding the image and the text */
+.contenedorimagenbanner {
+    position: relative;
+    text-align: center;
+    color: blue;
+}
+
+#imagenservicios{
+    filter:opacity(10%);
+}
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: #000;
+    font-size: 70px;
+    transform: translate(-50%, -50%);
+}
+
+.textoservicios{
+    margin-left: 0px;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+#contenedorimagentexto{
+    width: 40%;
+    margin-left: 20px;
+    margin-right: -100px;
+}
+
+#contenedortextoservicios{
+    width: 60%;
+    padding-top: 20px;
+}
+
+#imagentienda{
+    width: 70%;
+    border-radius: 700px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#contenedoriconosservicios{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-inline: 20px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#contenedoriconosservicios p{
+    padding: 20px;
+}
+
+#contenedoriconosservicios div{
+    padding: 20px;
+    width: 100%;
+}
+
+.textoserviciosizq{
+    margin-left: 70px;
+    margin-right: 0px;
+    text-align: justify;
+}
+
+#contenedorimagendertexto{
+    width: 40%;
+    margin-left: 100px;
+    margin-right: 0px;
+}
+
+#contenedortextoserviciosizq{
+    width: 100%;
+    padding-top: 20px;
+}
+
+#contenedortextoserviciosizq h1{
+    font-size: 50px;
+}
+
+#contenedortextoserviciosizq p{
+    font-size: 20px;
+}
+
+#imagentiendader{
+    width: 90%;
+    border-radius: 20px;
+}
+
+#componenteimagender{
+    padding: 20px;
+    background-color: #124de42c;
+}
+
+#componenteimagenizq{
+    background-color: #7cddee;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.textoserviciosder{
+    margin-left: 0px;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+#imagentiendaizq{
+    width: 120%;
+    margin-left: 0px;
+    background-color:#7cddee;
+}
+
+#contenedortextoserviciosder h1{
+    font-size: 50px;
+}
+
+#contenedortextoserviciosder p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#contenedorimagendertexto{
+    width: 40%;
+    margin-right: 0px;
+}
+
+#contenedortextoserviciosder{
+    width: 100%;
+    padding-top: 20px;
 }
 
   
