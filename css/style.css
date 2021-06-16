@@ -978,7 +978,7 @@ section h5{
 
 
 /*Css de Mauricio*/
-.bisuteriajoyasrelojes {
+/*.bisuteriajoyasrelojes {
     display: grid;
     grid-template-columns: 500px 500px 200px;
     grid-gap: 20px;
@@ -1012,7 +1012,7 @@ section h5{
 .bisuteriapulsera {
     width: 80%;
     height: 250px;
-}
+}*/
 
 
 
@@ -1023,15 +1023,32 @@ section h5{
     height: auto;
     padding: 15px;
     margin: 15px;
+    border: solid black;
 }
+
+.fraseproductos {
+    color: goldenrod;
+    padding: 0%;
+}
+
+.ropacalzadoaccesorios p {
+    text-align: justify;
+}
+
 
 .paginaropa {
     text-align: center;
+    border: solid green;
 }
 
+.paginaropa img {
+    width: 300px;
+    height: 247px;
+}
 
 .paginacalzado {
     text-align: center;
+    border: solid green;
 }
 
 .paginacalzado img{
@@ -1040,12 +1057,17 @@ section h5{
 }
 
 
-
 .paginaaccesorios {
     text-align: center;
+    border: solid green;
 }
 
 .paginaaccesorios img {
     width: 300px;
     height: 247px;
+    border: #4879f7;
 }
+
+
+
+/*Css de Accesorios-Mauricio*/

@@ -1,93 +1,259 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Accesorios</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
+
     <body>
-        <!-- barra de busqueda -->
-        <nav>
+         <!-- barra de busqueda -->
+         <nav>
             <div class="barraBusqueda">
-            <input type="text">
-            <button type="submit">Buscar</button>
+              <input type="text">
+              <button type="submit">Buscar</button>
             </div>
-        </nav>
-
-              <!-- menu principal -->
-        <nav>
+            <!-- menu principal -->
             <div class="menuPrincipal">
-            <a class="active" href="">Inicio</a>
-            <a href="./quienes-somos.html">¿Quienes Somos?</a>
-            <a href="./productos.html">Productos</a>
-            <a href="./servicios.html">Servicios</a>
-            <a href="./contactanos.html">Contáctanos</a>
+              <a href="./index.html">
+                <!-- iconos -->
+                <i class="fa fa-fw fa-home"></i>
+                Inicio
+              </a>
+              <a href="./quienes-somos.html">
+                <i class="fa fa-fw fa-address-card"></i>
+                ¿Quienes Somos?
+              </a>
+              <a href="./productos.html">
+                <i class="fa fa-shopping-bag"></i>
+                Productos
+              </a>
+              <a href="./servicios.html">
+                <i class="fa fa-bell"></i>
+                Servicios
+              </a>
+              <a class="active" href="./contactanos.html">
+                <i class="fa fa-phone"></i>
+                Contáctanos
+              </a>
             </div>
-        </nav>
-        
-        <div class="principalcontenedor">
-             
-        <!--Primera parte-->
-            <h1 class="principalheader"><center>ACCESORIOS</center></h1>
+          </nav>
 
-            <div class="principalseccion1">
-                <h2>Bisutería</h2>
+        <div id="contenedor">
 
-                <img class="principalimagen" src="../images/Accesorios/bisuteriapulsera.jpg" alt="Imagen no encontrada">
+            <div id="sidebar">
+                <input class="boton" type="checkbox" id="click">
+                <div class="disenioboton">
+                    <label for="click">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <ul>
+                    <li><a class="atajos" href="#deportivas">Bisutería</a></li>
+                    <li><a class="atajos" href="#casuales">Relojes</a></li>
+                    <li><a class="atajos" href="#elegante">Carteras</a></li>
+                </ul>
             </div>
 
-            <div class="principalseccion2">
-
-                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                Placeat nobis laudantium fugit eius deleniti odio dolorum optio facilis 
-                nesciunt asperiores error aperiam adipisci ad, 
-                tempora consequatur cumque maxime in sint?
-                </p>
-
+            <main class="principal">
+                <h2 id="deportivas" class="titulogeneral">Bisutería</h2>
+                <section>
+                    <h5>Oferta</h5>
+                    <h1 class="titulo">Pulsera de Perlas</h1>
             
-            </div>
 
-            
+                    <!--Parte de las especificaciones-->
+
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Joyas: Perlas</li>
+                                <li>Dije: Forma de corazón</li>
+                                <li>Blanco/Dorado</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Accesorios/bisuteriapulsera.png" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <img src="../images/Estrellas de Valoracion/Dos estrellas.png" alt="Imagen no encontrada">
+                        <h2>Reseñas</h2>
+                        <p><em>
+                            "Una pulsera sencilla, pero contiene un gran sentimiento."
+                        </em></p>
+                    </div>
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Logo Ilaria joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Cartier joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Guess.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Logo Ripley2.png" alt="Imagen no encontrada">
+                    </div>
+                </section> 
+
+                <!--Segunda parte-->
+                <section>
+                    <h1 class="titulo">Collar de esmeralda</h1>
+
+                    <!--Parte de las especificaciones-->
+
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Joya: Esmeralda</li>
+                                <li>Dije: Forma circular</li>
+                                <li>Color: Blanco/Silver</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Accesorios/Collar esmeralda.png" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <img src="../images/Estrellas de Valoracion/Tres Estrellas.png" alt="Imagen no encontrada">
+                        <h2>Reseñas</h2>
+                        <p><em>
+                            "Un poco costoso, pero vale la pena, pues la esmeralda es el símbolo de la 
+                            esperanza."
+                        </em></p>
+                    </div>
+                                        
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Logo Ilaria joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Cartier joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Guess.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Logo Ripley2.png" alt="Imagen no encontrada">
+                    </div>
+                </section>
+
+            </main>
+            <main class="principal">
+                <h2 id="casuales" class="titulogeneral">Relojes</h2>
+                <section>
+                    
+                    <h2 class="titulo">Cartier</h2>
+
+                    <!--Parte de las especificaciones-->
+
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Marca: Cartier</li>
+                                <li>Tipo de reloj: Analógico</li>
+                                <li>Color: Blanco/Negro</li>
+                            </ul>
+                        </p>
+                    </div>
+                    
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Accesorios/Reloj cartier.png" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <form id="valoracion">
+                            <p class="clasificacion">
+                                <input id="radio1" type="radio" name="estrellas" value="5">
+                                <label for="radio1">★</label>
+                                <input id="radio2" type="radio" name="estrellas" value="4">
+                                <label for="radio2">★</label>
+                                <input id="radio3" type="radio" name="estrellas" value="3">
+                                <label for="radio3">★</label>
+                                <input id="radio4" type="radio" name="estrellas" value="2">
+                                <label for="radio4">★</label>
+                                <input id="radio5" type="radio" name="estrellas" value="1">
+                                <label for="radio5">★</label>
+                            </p>
+                        </form>
+                        <h1>Reseñas</h1>
+                        <p>
+                        <em>"¿Se están olvidando los números romanos? Este reloj te ayudará a recordarlos." </em>
+                        </p>
+                        
+
+                    </div>
+
+                
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Logo Ilaria joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Cartier joyeria.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Logo Guess.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Logo Ripley2.png" alt="Imagen no encontrada">
+                    </div>
+                </section>
+
+                <section>
+                <h2 class="titulo">Rolex</h2>
+                    <!--Parte de las especificaciones-->
+                    <div class="seccion1">
+                        <h1>Especificaciones</h1>
+                        <p>
+                            <ul>
+                                <li>Marca: Rolex</li>
+                                <li>Tipo de reloj: Analógico</li>
+                                <li>Color: Golden</li>
+                            </ul>
+                        </p>
+                    </div>
+                
+                    <!--Parte del Modelo junto al precio-->
+                    <div class="seccion2">
+
+                        <img class="modelo" src="../images/Accesorios/reloj rolex golden.png" alt="Imagen no encontrada">
+
+                        <h2>Precio</h2>
+                    </div>
+
+                    <!--Parte de las reseñas-->
+                    <div class="seccion3">
+                        <img src="../images/Estrellas de Valoracion/Cinco Estrellas.png" alt="Imagen no encontrada">
+                        <h2>Reseñas</h2>
+                        <p>
+                            <em>"Rolex es sin duda de las mejores marcas, y no solo eso, si no también
+                                te hace sentir en un status social elevado.
+                            </em>
+                        </p>
+                        
+
+                    </div>
+
+                    
+                    <div class="tiendas">
+                        <img class="marca" src="../images/Marcas/Oechsle.png" alt="Imagenes no encontrada">
+                        <img class="marca" src="../images/Marcas/Platanitos Transparente.png" alt="Imagen no encontrada">
+                        <img class="marca" src="../images/Marcas/Ripley Transparente.png" alt="Imagen no encontrada">
+                        <img class="marcaopcional" src="../images/Marcas/Farabela Transparente.png" alt="Imagen no encontrada">
+                    </div>
+                </section>
 
 
-            <!--Segunda parte-->
-            <div class="principalseccion1">
 
-                <h3>Joyas</h3>
-                <img class="principalimagen" src="../images/Accesorios/collar.jfif" alt="Imagen no encontrada">
-
-            </div>
-
-            <div class="principalseccion2">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Placeat nobis laudantium fugit eius deleniti odio dolorum optio facilis 
-                    nesciunt asperiores error aperiam adipisci ad, 
-                    tempora consequatur cumque maxime in sint?
-                </p>
-            </div>
-            
-            <img class="principalanuncio" src="../images/Anuncios/Banco Anuncio.gif" alt="Imagen no encontrada">
-
-
-            <!--Tercer parte-->
-            <div class="principalseccion1" >
-                <h4>Relojes</h4>
-                <img class="principalimagen" src="../images/Accesorios/reloj.jpg" alt="Imagen no encontrada">
-    
-            </div>
-
-            <div class="principalseccion2">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Placeat nobis laudantium fugit eius deleniti odio dolorum optio facilis 
-                    nesciunt asperiores error aperiam adipisci ad, 
-                    tempora consequatur cumque maxime in sint?
-                </p>
-            </div>
-        </div>
     </body>
 </html>
