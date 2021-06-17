@@ -516,7 +516,7 @@ footer a:hover {
     width: 12%;
     background-color: #f1f1f1;
     position: fixed;
-    height: 69%;
+    height: 25.2%;
     overflow: auto;
     
     box-shadow: 1px 2px 6px;
@@ -561,7 +561,7 @@ footer a:hover {
     font-size: 30px;
 }
 
-section{
+.producto{
     margin: 20px;
     grid-column: 1 / 5;
     background-color: whitesmoke;
@@ -571,7 +571,7 @@ section{
     border-radius: 10px;
     box-shadow: 1px 1px 10px black;
 }
-section h5{
+.producto .oferta{
     padding: 0px;
     margin: 0.4px;
     
@@ -580,7 +580,7 @@ section h5{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     grid-column: 1 / 5;
-    
+    color: whitesmoke;
    
 }
 .seccion1{
@@ -614,22 +614,22 @@ section h5{
 .seccion2 .modelo{
     
     width: 80%;
-    
-    
-    
-    
+}
+.seccion2 .modeloropa{
+    width: 25%;
 }
 
 
 
 /*Seccion de las estrellas y reseñas*/
 
-#valoracion{
+.valoracion{
     font-size: 250%;
     
 }
 
-#valoracion p label{
+
+.valoracion p label{
     /*Estilos de las estrellas*/
     color: grey;
     cursor: pointer;
@@ -645,15 +645,18 @@ section h5{
 }
 
 /*Es obligatiorio respetar la ruta especifica con anterioridades*/
-#valoracion .clasificacion label:hover{
+
+.valoracion .clasificacion label:hover{
     color: orange;
 }
 /*Para que todos siguan*/
-#valoracion .clasificacion label:hover ~ label{
+
+.valoracion .clasificacion label:hover ~ label{
     color: orange;
 }
 /*Para cuando haga clic*/
-#valoracion .clasificacion input[type="radio"]:checked ~ label{
+
+.valoracion .clasificacion input[type="radio"]:checked ~ label{
     color: orange;
 }
 
@@ -663,27 +666,23 @@ section h5{
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-
+    
+}
+.tiendas a{
+    margin: auto;
+    padding: auto;
+    display:block;
+    text-align: center;
+    padding:.3em .5em;
 }
 .marca, .marcaopcional{
    
-    width: 50%;
-    margin: 10%;
-    border: 1px solid black;
-    background-color: white;
+    width: 60%;
     padding: 5%;
-    border-radius: 5px;
-    /*      (El segundo es para la derecha)    */
-    
-    
-    
-    margin: 10px;
 }
 .marca:hover, .marcaopcional:hover{
     
     box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
-    
     transition: 0.5s;
 }
 
@@ -827,138 +826,6 @@ section h5{
         width: 70%;
     }
 }
-
-
-
-
-
-        /*----------Pagina de Ropa-----------*/
-
-.principalcontenedor{
-    display: grid;
-    grid-template-columns: 35% 45% auto;
-    grid-template-rows: repeat(4, auto);
-    
-    
-}
-
-.principalheader{
-    grid-column: 1 / 4;
-    text-align: center;
-    
-    
-    margin: auto;
-    margin-top: 20px;
-    
-}
-
-.principalanuncio{
-    
-    
-    
-    grid-column: 3 / 4;
-    grid-row: 2 / 5;
-    align-self: center;
-    width: 90%;
-    height: 90%;
-    margin-left: 20px;
-}
-
-.principalseccion1{
-    margin-left:  20px; 
-    grid-column: 1 / 2;   
-}
-
-.principalseccion1 h2{
-    
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 20px;
-    
-    
-}
-
-.principalimagen{
-    
-    width: 80%;
-    height: 250px;
-}
-
-.principalseccion2{
-    text-align:center;
-    align-self: center;
-    grid-column: 2 /3;
-    font-size: 20px;
-}
-
-
-@media (max-width:478px){
-
-    /* Aquí van todos los estilos CSS */
-
-    .principalcontenedor{
-        
-        display: grid;
-        grid-template-columns: 1fr 30%;
-        grid-template-rows: repeat(6, auto);
-    }
-    .principalheader{
-        
-        text-align: center;
-        
-
-    }
-    .principalseccion1{
-        grid-column: 1 / 3;
-        align-items: center;
-        margin-right: 70px;
-    }
-    .principalseccion2{
-        grid-column: 1 / 3;
-        text-align: center;
-        margin-left: 30px;
-    }
-    img.principalimagen{
-        margin-left: 40px;
-    }
-    
-    .principalanuncio{
-       
-        display: none;
-        visibility:hidden;
-        
-    }
-}
-
-
-@media (max-width: 900px){
-    /* Most of tablets and posibility phones*/
-    .principalcontenedor{
-        display: grid;
-        grid-template-columns: 50% 40%;
-
-    }
-
-    .principalseccion1{
-        margin: auto;
-        margin-left: 20px;
-    }
-
-    .principalseccion2{
-        font-size: 110%;
-    }
-
-    .principalanuncio{
-        display: none;
-        visibility: hidden;
-    }
-}
-
-
-
-
-
-
 
 
 /*Css de Mauricio*/
