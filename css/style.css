@@ -101,6 +101,96 @@ body{
     cursor: pointer;
 }
 
+#menu-toggle{
+    display: none;
+}
+
+
+/* version de menu para moviles */
+@media only screen and (max-width: 600px) {
+    .linea{
+        display: block;
+    }
+
+    .menuPrincipal a{
+        float: none;
+        display: none;
+    }
+
+    .barraBusqueda{
+        display: none;
+    }
+
+    .botonMenu{
+       margin: 0 auto;
+       display: block;
+       width: 40px;
+       height: 36px;
+       padding: 10px;
+       border-radius: 7px;
+       color: white;
+       cursor: pointer;
+       position: relative;
+    }
+    
+    .botonMenu span{
+       display: block;
+       width: 40px;
+       height: 4px;
+       background: white;
+       margin-top: 7px;
+       border: 1px solid black;
+       background-color: black;
+    }
+    
+    nav label{
+       cursor: pointer;
+    }
+    
+    #menu-toggle{
+       display: none;
+    }
+    
+    #trickMenu{
+       display: none;
+       text-align: center;
+       background: white;
+       padding: 10px 0;
+    }
+
+    #menu-toggle:checked ~ .menuPrincipal a{
+        display: block;
+    }
+
+    .carrusel-pantalla img{
+        width: 50%;
+    }
+
+    #menucontainer{
+        display: block;
+    }
+
+    body footer{
+        display: block;
+    }
+
+    footer #menucontainer{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    footer #integrantes{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    footer #redessociales{
+        text-align: center;
+    }
+    
+}
+
 /* estilos para el contenedor de la pagina de contacto */
 #contenedorcontacto{
     display: flex;
@@ -633,6 +723,41 @@ footer a:hover {
     padding-top: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .contenedortarjetas{
+        display: block;
+    }
+
+    .informacionrapidaizquierda{
+        display:inline-block;
+    }
+
+    .informacionrapidaizquierda img{
+        width: 100%;
+    }
+
+    #informacionrapidaderecha{
+        display: block;
+    }
+
+    .parrafoinformacionrapidaizquierda{
+        padding-bottom: 5%;
+    }
+
+    .parrafoinformacionrapidaderecha{
+        text-align: justify;
+        padding-bottom: 5%;
+    }
+
+    #titulodestacadoizquierda{
+        text-align: center;
+    }
+
+    .imagenderecha{
+        width: 100%;
+    }
+}
+
   
                             /*------------------Parte de Enzo -------------------*/
                             /*---------------------------------------------------*/
@@ -640,12 +765,14 @@ footer a:hover {
 
     
     /*El tercer nivel*/
-
+/*El display grid*/
+.grid{
+    display: grid;
+}
 
 #contenedor{
     grid-template-columns: 1fr;
     display: grid;
-    background-color: rgb(217, 222, 245);
     
 }
 
@@ -670,7 +797,7 @@ footer a:hover {
     width: 12%;
     background-color: #f1f1f1;
     position: fixed;
-    height: 25.2%;
+    height: 168px;
     overflow: auto;
     
     box-shadow: 1px 2px 6px;
@@ -685,23 +812,120 @@ footer a:hover {
     background-color: #4879f7;
     color: white;
 }
+.deporte{
+    background-color: #428bca;
+    
+}
+.casual{
+    background-color:#31c3dd
+}
+.elegante{
+    background-color: #2c56c2;
+}
 
-
-
-.principal{
+.casual, .deporte, .elegante{
     grid-column: 1 / 1;
     margin-left: 170px;
     grid-template-rows: repeat(20, auto);
-   
-    
-    background-color: #4879f7 ;
     margin-bottom: 10px;
-    
-    
     margin-top: 10px;
     box-shadow: 1px 1px 10px black;
     margin-right: 20px;
     margin-top: 20px;
+}
+
+
+
+
+/*                  Carrusel            */
+/* estilos del contenedor de todo el carrusel */
+.carruselzapatos {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin: 20px;
+    grid-column: 2 / 3;
+}
+/* estilos para los radio buttons cuando estan seleccionados */
+#zapatocarrusel01:checked ~ .boton-1,
+#zapatocarrusel02:checked ~ .boton-2,
+#zapatocarrusel03:checked ~ .boton-3,
+#zapatillascarrusel01:checked ~ .boton-1,
+#zapatillascarrusel02:checked ~ .boton-2,
+#zapatillascarrusel03:checked ~ .boton-3 {
+    display: block;
+}
+/* estilos para los radio buttons cuando estan seleccionados */
+#zapatocarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#zapatocarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#zapatocarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto {
+    color: #428bca;
+}
+/* estilos para todas las imagenes de los items del carrusel */
+.carruselzapatos .carrusel-pantalla img {
+    display: block;
+    height: 420px;
+    background-color: white;
+}
+
+
+
+.abajocarrusel h2{
+    text-align: center;
+}
+
+.likedislike{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/*El me gusta*/
+/*
+.likedislike label{
+    display: flex;
+    float: left;
+}
+.likedislike label h3{
+    visibility: hidden;
+    
+}
+.likedislike div input{
+    visibility: hidden;
+    display: none;
+}
+.megusta input[type=radio]:checked + label i{
+    color:blue
+}
+
+.megusta input[type=radio]:checked + label h3{
+    visibility: initial;
+}
+/*No me gusta
+.nomegusta input[type=radio]:checked + label i{
+    color:red;
+}
+
+.nomegusta input[type=radio]:checked + label h3{
+    visibility: initial;
+}
+
+*/
+
+
+
+.producto{
+    margin: 20px;
+    grid-column: 1 / 5;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 30% 20% 25% 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    grid-template-rows: 100px 460px 170px 50px;
 }
 .titulogeneral{
     grid-column: 1 / 5;
@@ -709,110 +933,81 @@ footer a:hover {
     
     font-size: 35px;
 }
-.titulo{
+
+.cabezera{
     grid-column: 1 / 5;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+}
+.cabezera div{
+    display: flex;
+}
+
+.cabezera .fuego{
+    width: 80px;
+    margin: 10px 10px;
+}
+.cabezera .titulo{
+    
     text-align: center;
     font-size: 30px;
 }
+.cabezera i{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    margin: 10px 10px;
+}
 
-.producto{
-    margin: 20px;
-    grid-column: 1 / 5;
-    background-color: whitesmoke;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px black;
-}
-.producto .oferta{
-    padding: 0px;
-    margin: 0.4px;
-    
-    text-align: center;
-    background-color: rgb(219, 16, 16);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    grid-column: 1 / 5;
-    color: whitesmoke;
-   
-}
+
 .seccion1{
-    grid-column: 1 / 1;
-    text-align: justify;
-    margin-left: 10%;
-    margin-right: 10%;
-    align-self: center;
+    grid-column: 1 / 3;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
-.seccion1 ul{
+
+
+
+.seccion2{
+    grid-column: 3 / 4;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+.especificaciones{
+    background-color: rgb(235, 252, 251);
+    margin: auto;
+    padding: 10px 20px;
+}
+.seccion2 h2{
+    
+    margin: 0;
+    
+    font-size: 40px;
+}
+.seccion2 ul{
     
     list-style-type: none;
     padding: 0px;
 }
-.seccion1 ul li{
+.seccion2 ul li{
     margin: 10px 0px;
 }
-
-.seccion2{
-    grid-column: 2 / 4;
-    justify-items: center;
-    display: grid;
-}
-.seccion2 h2{
-    
+.seccion2 h1{
+    text-align: center;
     margin: auto;
-    
-    font-size: 40px;
-}
-.seccion2 .modelo{
-    
-    width: 80%;
-}
-.seccion2 .modeloropa{
-    width: 25%;
+    padding: auto;
 }
 
 
 
-/*Seccion de las estrellas y reseñas*/
 
-.valoracion{
-    font-size: 250%;
-    
-}
-
-
-.valoracion p label{
-    /*Estilos de las estrellas*/
-    color: grey;
-    cursor: pointer;
-}
-.clasificacion input[type=radio]{
-    /*Sin diseño de los botones*/
-    display: none;
-}
-/* Es para poner el diseño de las estrellas*/
-.clasificacion{
-    direction: rtl;/*De derecha a izquierda*/
-    unicode-bidi: bidi-override;/*Bidi bididireecional  */
-}
-
-/*Es obligatiorio respetar la ruta especifica con anterioridades*/
-
-.valoracion .clasificacion label:hover{
-    color: orange;
-}
-/*Para que todos siguan*/
-
-.valoracion .clasificacion label:hover ~ label{
-    color: orange;
-}
-/*Para cuando haga clic*/
-
-.valoracion .clasificacion input[type="radio"]:checked ~ label{
-    color: orange;
-}
 
 
 
@@ -820,7 +1015,7 @@ footer a:hover {
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    grid-row: 3 / 3;
 }
 .tiendas a{
     margin: auto;
@@ -829,7 +1024,11 @@ footer a:hover {
     text-align: center;
     padding:.3em .5em;
 }
-.marca, .marcaopcional{
+.tiendas h1{
+    grid-column: 1 / 5;
+    text-align: center;
+}
+.marca1,.marca, .marcaopcional{
    
     width: 60%;
     padding: 5%;
@@ -837,30 +1036,59 @@ footer a:hover {
 .marca:hover, .marcaopcional:hover{
     
     box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
-    transition: 0.5s;
+    transition: 1s;
+    background-color: yellow;
+}
+.marca1:hover{
+    box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
+    transition: 2s;
+    background-color: red;
 }
 
 
 .seccion3{
-    grid-column: 4 / 4;
-    text-align: justify;
-    margin-right: 10%;
-    align-self: center;
+    grid-column: 4 / 5;
+    margin-right: 10px;
+    margin-left: 20px;
+    
 }
-.seccion3 img{
+
+
+/*Comentarios*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     width: 80%;
-    align-items: center;
+    padding: 10px;
+}
+.avatar{
+    width: 50%;
+    margin-left: 40px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.estrellas{ 
+    width: 10px;
+    display: flex;
+}
+.estrellas .fa{
+    font-size: 20px;
 }
 @media (max-width:884px){
     
-    .principal{
+    .casual, .deporte, .elegante{
         margin-left: 15px;
     }
-
+    .producto{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: auto;
+    }
     /*El sidebar escondido*/
     #sidebar{
         position: fixed;
-        
+        z-index: 1;
     }
     #sidebar > .disenioboton{
         
@@ -916,28 +1144,29 @@ footer a:hover {
         height: 170px;
         
     }
-    section{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .seccion1{
+        grid-column: 1 / 1;
     }
-
+    .seccion2{
+        grid-column: 2 / 2;
+    }
+    .seccion2 .especificaciones{
+        margin: 0;
+        margin-top: 100px;
+        margin-right: 20px;
+        padding: 0;
+    }
     .seccion3{
         visibility: hidden;
         display: none;
     }
     .tiendas{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-column: 1 / 3;
+        grid-template-columns: 1fr 1fr;
     }
-    .marcaopcional{
+    .tiendas a .marcaopcional{
         visibility: hidden;
         display: none;
-    }
-    ul{
-        
-        height: 20%;
-    }
-    li{
-        font-size: 16px;
     }
 }
 
@@ -946,38 +1175,45 @@ footer a:hover {
         display: grid;
         
     }
-    
-    
-    section{
-        display: grid;
-    }
-   
-    .principal{
-        
-        display: grid;
-        
-    }
-    section{
+    .producto{
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
     }
-    
-    .seccion2 .modelo{
-        width: 60%;
+    .cabezera{
+        grid-column: 1 / 1;
+    }
+    .cabezera .fuego{
+        width: 60px;
+    }
+    .carruselzapatos .carrusel-pantalla img{
+        height: 200px;
     }
     .seccion1{
-        grid-column: 1 / 2;
-    }
+        grid-column: 1 / 1;
+    }    
     .seccion2{
-        grid-column: 1 / 2;
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+        margin-right: 20px;
+    }
+    .seccion2 .especificaciones{
+        margin-top: 0;
+        margin-left: 30px;
+    }
+    .principal{
+        display: grid;
     }
     .tiendas{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        
+        grid-template-columns: 1fr 1fr;
+        grid-row: 4 / 5 ;
     }
-    .marca{
-        width: 70%;
+    .nolink{
+        display: none;
+    }
+    .marca1, .marca{
+        width: 110px;
     }
 }
 
