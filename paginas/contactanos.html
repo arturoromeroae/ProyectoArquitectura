@@ -10,37 +10,47 @@
         <title>Contáctanos</title>
     </head>
     <body>
-        <!-- barra de busqueda -->
-        <nav>
-          <div class="barraBusqueda">
-            <input type="text">
-            <button type="submit">Buscar</button>
+      <!-- menu telefonos -->
+      <nav>
+        <label for="menu-toggle">
+          <div class="botonMenu">
+             <span></span>
+             <span></span>
+             <span></span>
           </div>
-          <!-- menu principal -->
-          <div class="menuPrincipal">
-            <a href="./index.html">
-              <!-- iconos -->
-              <i class="fa fa-fw fa-home"></i>
-              Inicio
-            </a>
-            <a href="./quienessomos.html">
-              <i class="fa fa-fw fa-address-card"></i>
-              ¿Quiénes Somos?
-            </a>
-            <a href="./productos.html">
-              <i class="fa fa-shopping-bag"></i>
-              Productos
-            </a>
-            <a href="./servicios.html">
-              <i class="fa fa-bell"></i>
-              Servicios
-            </a>
-            <a class="active" href="./contactanos.html">
-              <i class="fa fa-phone"></i>
-              Contáctanos
-            </a>
-          </div>
-        </nav>
+       </label>
+       <input type="checkbox" id="menu-toggle" />
+       <!-- barra de busqueda -->
+        <img id="logomenu" src="../images/logoproyecto.png" alt="no se encontro la imagen">
+        <div class="barraBusqueda">
+          <input type="text">
+          <button type="submit">Buscar</button>
+        </div>
+        <!-- menu principal -->
+        <div class="menuPrincipal">
+          <a href="./index.html">
+            <!-- iconos -->
+            <i class="fa fa-fw fa-home"></i>
+            Inicio
+          </a>
+          <a href="./quienessomos.html">
+            <i class="fa fa-fw fa-address-card"></i>
+            ¿Quiénes Somos?
+          </a>
+          <a href="./productos.html">
+            <i class="fa fa-shopping-bag"></i>
+            Productos
+          </a>
+          <a href="./servicios.html">
+            <i class="fa fa-bell"></i>
+            Servicios
+          </a>
+          <a class="active" href="./contactanos.html">
+            <i class="fa fa-phone"></i>
+            Contáctanos
+          </a>
+        </div>
+      </nav>
 
         <!-- contenedor del contenido de la pagina -->
         <div id="contenedorcontacto">
@@ -70,16 +80,18 @@
         </div>
 
         <!-- Footer -->
-        <footer class="">
-          <a href="">
-            <i class="fa fa-facebook-official"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-twitter"></i>
-          </a>
+        <footer>
+          <div id="redessociales">
+            <a>
+              <i class="fa fa-facebook-official"></i>
+            </a>
+            <a>
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a>
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
           <!-- menu footer -->
           <div id="menucontainer">
             <a href="./index.html">

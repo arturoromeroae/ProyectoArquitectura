@@ -78,6 +78,7 @@ body{
     text-align: right;
     overflow: hidden;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 /* estilos para el input de la barra de busqueda del menu */
@@ -99,6 +100,107 @@ body{
     font-size: 17px;
     border: none;
     cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+#logomenu{
+    position: absolute;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
+
+/* version de menu para moviles */
+@media only screen and (max-width: 600px) {
+    #logomenu{
+        margin-top: -80px;
+    }
+
+    .linea{
+        display: block;
+    }
+
+    .menuPrincipal a{
+        float: none;
+        display: none;
+    }
+
+    .barraBusqueda{
+        display: none;
+    }
+
+    .botonMenu{
+       margin: 0 auto;
+       display: block;
+       width: 40px;
+       height: 36px;
+       padding: 10px;
+       border-radius: 7px;
+       color: white;
+       cursor: pointer;
+       position: relative;
+    }
+    
+    .botonMenu span{
+       display: block;
+       width: 40px;
+       height: 4px;
+       background: white;
+       margin-top: 7px;
+       border: 1px solid black;
+       background-color: black;
+    }
+    
+    nav label{
+       cursor: pointer;
+    }
+    
+    #menu-toggle{
+       display: none;
+    }
+    
+    #trickMenu{
+       display: none;
+       text-align: center;
+       background: white;
+       padding: 10px 0;
+    }
+
+    #menu-toggle:checked ~ .menuPrincipal a{
+        display: block;
+    }
+
+    .carrusel-pantalla img{
+        width: 50%;
+    }
+
+    #menucontainer{
+        display: block;
+    }
+
+    body footer{
+        display: block;
+    }
+
+    footer #menucontainer{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    footer #integrantes{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    footer #redessociales{
+        text-align: center;
+    }
+    
 }
 
 /* estilos para el contenedor de la pagina de contacto */
@@ -466,6 +568,7 @@ footer a:hover {
     border-radius: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     color: #000;
+    font-size: 80px;
 }
 
 .tarjetalogos{
@@ -513,7 +616,7 @@ footer a:hover {
 }
 
 /* Centered text */
-.centered {
+.tituloservicio {
     position: absolute;
     top: 50%;
     left: 40%;
@@ -599,7 +702,6 @@ footer a:hover {
 
 #componenteimagenizq{
     background-color: #7cddee;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .textoserviciosder{
@@ -631,6 +733,109 @@ footer a:hover {
 #contenedortextoserviciosder{
     width: 100%;
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedortarjetas{
+        display: block;
+    }
+
+    .informacionrapidaizquierda{
+        display:inline-block;
+    }
+
+    .informacionrapidaizquierda img{
+        width: 100%;
+    }
+
+    #informacionrapidaderecha{
+        display: block;
+    }
+
+    .parrafoinformacionrapidaizquierda{
+        padding-bottom: 5%;
+    }
+
+    .parrafoinformacionrapidaderecha{
+        text-align: justify;
+        padding-bottom: 5%;
+    }
+
+    #titulodestacadoizquierda{
+        text-align: center;
+    }
+
+    .imagenderecha{
+        width: 100%;
+    }
+
+    .tarjetalogos{
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #logoscontactoquienessomos .logoscirculos{
+        font-size: 40px;
+    }
+
+    .tituloservicio{
+        margin-left: 10%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tarjetaservicios{
+        display: block;
+        text-align: center;
+    }
+
+    #contenedorimagentexto{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #contenedortextoservicios{
+        width: 100%;
+    }
+
+    .textoservicios{
+        margin-right: 0%;
+        padding-inline: 20px;
+    }
+
+    #componenteimagender, #componenteimagenizq{
+        display: block;
+    }
+
+    #contenedorimagendertexto{
+        margin-left: 35%;
+    }
+
+    #contenedorimagenizqtexto{
+        margin-left: 0%;
+        width: 80%;
+    }
+
+    .textoserviciosizq{
+        margin-left: 0px;
+    }
+
+    #contenedortextoserviciosder p{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 25px;
+    }
+
+    #contenedorcontacto{
+        display: block;
+    }
+
+    #formulariocontacto, #imagen{
+        text-align: center;
+        width: 100%;
+    }
 }
 
   
@@ -1078,44 +1283,6 @@ footer a:hover {
 
 
 /*Css de Mauricio*/
-/*.bisuteriajoyasrelojes {
-    display: grid;
-    grid-template-columns: 500px 500px 200px;
-    grid-gap: 20px;
-}
-
-.imagenbisuteriareloj {
-    width: 60%;
-    height: 90%;
-    margin-left: 150px;
-    margin-right: 10px;
-    background: brown;
-    border: 10px groove rgb(209, 124, 27);
-}
-
-.textobisuteriajoyasrelojes {
-    border: 2px groove mediumorchid;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-bottom: auto;
-    border-radius: 3px;
-     text-align: center;
-}
-
-.spam {
-    display: none;
-    visibility:hidden;
-    margin-left: 10%;
-}
-
-.bisuteriapulsera {
-    width: 80%;
-    height: 250px;
-}*/
-
-
-
 /*Css Productos*/
 #ropacalzadoaccesorios {
     display: flex;
@@ -1136,16 +1303,18 @@ footer a:hover {
 .paginaropa {
     text-align: center;
     background-color: #7cddee;
+    min-width: 33.3%;
 }
 
 .paginaropa img {
     height: 247px;
 }
 
+
 .paginacalzado {
     text-align: center;
     background-color: #ecd0c9;
-
+    min-width: 33.3%;
 }
 
 .paginacalzado img{
@@ -1157,11 +1326,22 @@ footer a:hover {
 .paginaaccesorios {
     text-align: center;
     background-color: #fff8f8;
+    min-width: 33.3%;
+}
+
+.paginaaccesorios a {
+    color: black;
+    text-decoration: none;
 }
 
 .paginaaccesorios img {
     width: 300px;
     height: 247px;
+}
+
+.cuerpoproductos {
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 

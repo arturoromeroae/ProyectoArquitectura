@@ -10,8 +10,18 @@
         <title>¿Quienes Somos?</title>
     </head>
     <body>
-        <!-- barra de busqueda -->
+        <!-- menu telefonos -->
         <nav>
+          <label for="menu-toggle">
+            <div class="botonMenu">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+         </label>
+         <input type="checkbox" id="menu-toggle" />
+         <!-- barra de busqueda -->
+         <img id="logomenu" src="../images/logoproyecto.png" alt="no se encontro la imagen">
             <div class="barraBusqueda">
               <input type="text">
               <button type="submit">Buscar</button>
@@ -45,7 +55,7 @@
         <!-- tarjeta larga con imagen a la izquierda -->
         <div id="" class="informacionrapidaizquierda pantallaflexible">
             <div class="">
-                <img id="logoquienessomos" class="borderedondo" src="../images/logo.jpeg" width="100%" alt="logo de empresa">
+                <img id="logoquienessomos" class="borderedondo" src="../images/logoproyecto.png" width="100%" alt="logo de empresa">
             </div>
             <div class="parrafoinformacionquienessomos">
                 <h1 class="textocentrado textoblanco">¡Somos una empresa 100% peruana!.</h1>
@@ -134,57 +144,59 @@
         <div id="logoscontactoquienessomos">
           <div class="tarjetalogos">
             <a href="./contactanos.html">
-              <i class="fa fa-phone iconocirculo logoscirculos fondoazul" style="font-size: 80px;"></i>
+              <i class="fa fa-phone iconocirculo logoscirculos fondoazul"></i>
             </a>
             <h2 class="textocentrado">Contacto</h2>
           </div>
           <div class="tarjetalogos">
             <a href="./productos.html">
-              <i class="fa fa-shopping-cart iconocirculo logoscirculos fondoazul" style="font-size: 80px;"></i>
+              <i class="fa fa-shopping-cart iconocirculo logoscirculos fondoazul"></i>
             </a>
             <h2 class="textocentrado">Productos</h2>
           </div>
           <div class="tarjetalogos">
             <a href="./servicios.html">
-              <i class="fa fa-thumbs-up iconocirculo logoscirculos fondoazul" style="font-size: 80px;"></i>
+              <i class="fa fa-thumbs-up iconocirculo logoscirculos fondoazul"></i>
             </a>
             <h2 class="textocentrado">Servicios</h2>
           </div>
       </div>
 
         <!-- Footer -->
-        <footer class="">
-            <a href="">
+        <footer>
+          <div id="redessociales">
+            <a>
               <i class="fa fa-facebook-official"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-instagram"></i>
             </a>
-            <a href="">
+            <a>
               <i class="fa fa-twitter"></i>
             </a>
-            <!-- menu footer -->
-            <div id="menucontainer">
-              <a href="./index.html">
-                Inicio
-              </a>
-              <a href="./quienessomos.html">
-                ¿Quienes Somos?
-              </a>
-              <a href="./productos.html">
-                Productos
-              </a>
-              <a href="./servicios.html">
-                Servicios
-              </a>
-              <a class="active" href="./contactanos.html">
-                Contáctanos
-              </a>
-            </div>
-            <!-- texto integrantes -->
-            <div id="integrantes">
-              ©AJEM
-            </div>
+          </div>
+          <!-- menu footer -->
+          <div id="menucontainer">
+            <a href="./index.html">
+              Inicio
+            </a>
+            <a href="./quienessomos.html">
+              ¿Quienes Somos?
+            </a>
+            <a href="./productos.html">
+              Productos
+            </a>
+            <a href="./servicios.html">
+              Servicios
+            </a>
+            <a class="active" href="./contactanos.html">
+              Contáctanos
+            </a>
+          </div>
+          <!-- texto integrantes -->
+          <div id="integrantes">
+            ©AJEM
+          </div>
         </footer>
     </body>
 </html>
