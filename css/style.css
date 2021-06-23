@@ -106,7 +106,7 @@ body{
 }
 
 
-  
+/* version de menu para moviles */
 @media only screen and (max-width: 600px) {
     .linea{
         display: block;
@@ -160,6 +160,33 @@ body{
 
     #menu-toggle:checked ~ .menuPrincipal a{
         display: block;
+    }
+
+    .carrusel-pantalla img{
+        width: 50%;
+    }
+
+    #menucontainer{
+        display: block;
+    }
+
+    body footer{
+        display: block;
+    }
+
+    footer #menucontainer{
+        text-align: center;
+        margin-left: 0px;
+        font-size: 12px;
+    }
+
+    footer #integrantes{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    footer #redessociales{
+        text-align: center;
     }
     
 }
@@ -694,6 +721,41 @@ footer a:hover {
 #contenedortextoserviciosder{
     width: 100%;
     padding-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedortarjetas{
+        display: block;
+    }
+
+    .informacionrapidaizquierda{
+        display:inline-block;
+    }
+
+    .informacionrapidaizquierda img{
+        width: 100%;
+    }
+
+    #informacionrapidaderecha{
+        display: block;
+    }
+
+    .parrafoinformacionrapidaizquierda{
+        padding-bottom: 5%;
+    }
+
+    .parrafoinformacionrapidaderecha{
+        text-align: justify;
+        padding-bottom: 5%;
+    }
+
+    #titulodestacadoizquierda{
+        text-align: center;
+    }
+
+    .imagenderecha{
+        width: 100%;
+    }
 }
 
   
