@@ -556,6 +556,7 @@ footer a:hover {
     border-radius: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     color: #000;
+    font-size: 80px;
 }
 
 .tarjetalogos{
@@ -603,7 +604,7 @@ footer a:hover {
 }
 
 /* Centered text */
-.centered {
+.tituloservicio {
     position: absolute;
     top: 50%;
     left: 40%;
@@ -689,7 +690,6 @@ footer a:hover {
 
 #componenteimagenizq{
     background-color: #7cddee;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 .textoserviciosder{
@@ -754,6 +754,74 @@ footer a:hover {
     }
 
     .imagenderecha{
+        width: 100%;
+    }
+
+    .tarjetalogos{
+        margin-left: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #logoscontactoquienessomos .logoscirculos{
+        font-size: 40px;
+    }
+
+    .tituloservicio{
+        margin-left: 10%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .tarjetaservicios{
+        display: block;
+        text-align: center;
+    }
+
+    #contenedorimagentexto{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    #contenedortextoservicios{
+        width: 100%;
+    }
+
+    .textoservicios{
+        margin-right: 0%;
+        padding-inline: 20px;
+    }
+
+    #componenteimagender, #componenteimagenizq{
+        display: block;
+    }
+
+    #contenedorimagendertexto{
+        margin-left: 35%;
+    }
+
+    #contenedorimagenizqtexto{
+        margin-left: 0%;
+        width: 80%;
+    }
+
+    .textoserviciosizq{
+        margin-left: 0px;
+    }
+
+    #contenedortextoserviciosder p{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 25px;
+    }
+
+    #contenedorcontacto{
+        display: block;
+    }
+
+    #formulariocontacto, #imagen{
+        text-align: center;
         width: 100%;
     }
 }
