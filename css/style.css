@@ -78,6 +78,7 @@ body{
     text-align: right;
     overflow: hidden;
     background-color: white;
+    margin-bottom: 20px;
 }
 
 /* estilos para el input de la barra de busqueda del menu */
@@ -105,9 +106,20 @@ body{
     display: none;
 }
 
+#logomenu{
+    position: absolute;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+
 
 /* version de menu para moviles */
 @media only screen and (max-width: 600px) {
+    #logomenu{
+        margin-top: -80px;
+    }
+
     .linea{
         display: block;
     }
