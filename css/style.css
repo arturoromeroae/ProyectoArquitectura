@@ -983,44 +983,6 @@ footer a:hover {
 
 
 /*Css de Mauricio*/
-/*.bisuteriajoyasrelojes {
-    display: grid;
-    grid-template-columns: 500px 500px 200px;
-    grid-gap: 20px;
-}
-
-.imagenbisuteriareloj {
-    width: 60%;
-    height: 90%;
-    margin-left: 150px;
-    margin-right: 10px;
-    background: brown;
-    border: 10px groove rgb(209, 124, 27);
-}
-
-.textobisuteriajoyasrelojes {
-    border: 2px groove mediumorchid;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-bottom: auto;
-    border-radius: 3px;
-     text-align: center;
-}
-
-.spam {
-    display: none;
-    visibility:hidden;
-    margin-left: 10%;
-}
-
-.bisuteriapulsera {
-    width: 80%;
-    height: 250px;
-}*/
-
-
-
 /*Css Productos*/
 #ropacalzadoaccesorios {
     display: flex;
@@ -1041,16 +1003,18 @@ footer a:hover {
 .paginaropa {
     text-align: center;
     background-color: #7cddee;
+    min-width: 33.3%;
 }
 
 .paginaropa img {
     height: 247px;
 }
 
+
 .paginacalzado {
     text-align: center;
     background-color: #ecd0c9;
-
+    min-width: 33.3%;
 }
 
 .paginacalzado img{
@@ -1062,11 +1026,22 @@ footer a:hover {
 .paginaaccesorios {
     text-align: center;
     background-color: #fff8f8;
+    min-width: 33.3%;
+}
+
+.paginaaccesorios a {
+    color: black;
+    text-decoration: none;
 }
 
 .paginaaccesorios img {
     width: 300px;
     height: 247px;
+}
+
+.cuerpoproductos {
+    margin: 0 auto;
+    padding: 0 auto;
 }
 
 
