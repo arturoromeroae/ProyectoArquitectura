@@ -1311,6 +1311,10 @@ footer a:hover {
     height: 247px;
 }
 
+.paginaropa a {
+    color: black;
+    text-decoration: none;
+}
 
 .paginacalzado {
     text-align: center;
@@ -1345,11 +1349,3 @@ footer a:hover {
     height: 247px;
 }
 
-/*.cuerpoproductos {
-    margin: 0 auto;
-    padding: 0 auto;
-}*/
-
-
-
-/*Css de Accesorios-Mauricio*/
