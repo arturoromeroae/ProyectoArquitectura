@@ -102,7 +102,7 @@ body{
     cursor: pointer;
 }
 
-#menu-toggle{
+#menuresposive{
     display: none;
 }
 
@@ -159,7 +159,7 @@ body{
        cursor: pointer;
     }
     
-    #menu-toggle{
+    #menuresposive{
        display: none;
     }
     
@@ -170,7 +170,7 @@ body{
        padding: 10px 0;
     }
 
-    #menu-toggle:checked ~ .menuPrincipal a{
+    #menuresposive:checked ~ .menuPrincipal a{
         display: block;
     }
 
