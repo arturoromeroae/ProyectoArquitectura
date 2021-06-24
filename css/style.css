@@ -114,7 +114,7 @@ body{
 }
 
 
-/* version de menu para moviles */
+/* version de menu y footer para moviles */
 @media only screen and (max-width: 600px) {
     #logomenu{
         margin-top: -80px;
@@ -174,7 +174,7 @@ body{
         display: block;
     }
 
-    .carrusel-pantalla img{
+    .carruselpantalla img{
         width: 50%;
     }
 
@@ -321,20 +321,20 @@ footer a:hover {
 }
 
 /* estilos para el carrusel */
-.carrusel-dentro {
+.carruseldentro {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
 /* estilos para el input que esta seleccionado y para la pantalla que se muestre */
-.carrusel-mostrar:checked + .carrusel-pantalla {
+.carruselmostrar:checked + .carruselpantalla {
     position: static;
     opacity: 100;
 }
 
 /* estilos para todas los items del carrusel */
-.carrusel-pantalla {
+.carruselpantalla {
     position: absolute;
     opacity: 0;
     -webkit-transition: opacity 0.6s ease-out;
@@ -342,7 +342,7 @@ footer a:hover {
 }
 
 /* estilos para todas las imagenes de los items del carrusel */
-.carrusel-pantalla img {
+.carruselpantalla img {
     display: block;
     height: auto;
     width: 100%;
@@ -350,7 +350,7 @@ footer a:hover {
 }
 
 /* estilo para los botones del carrusel */
-.carrusel-boton {
+.carruselboton {
     background: rgba(0, 0, 0, 0.28);
     border-radius: 50%;
     color: #fff;
@@ -370,30 +370,30 @@ footer a:hover {
 }
 
 /* estilos para el boton de atras carrusel */
-.carrusel-boton.anterior {
+.carruselboton.anterior {
     left: 2%;
 }
 
 /* estilos para el boton de siguiente carrusel */
-.carrusel-boton.siguiente {
+.carruselboton.siguiente {
     right: 2%;
 }
 
 /* estilos al estar el mouse encima del boton carrusel */
-.carrusel-boton:hover {
+.carruselboton:hover {
     background: rgba(0, 0, 0, 0.8);
     color: #aaaaaa;
 }
 
 /* estilos para los radio buttons cuando estan seleccionados */
-#carrusel-1:checked ~ .boton-1,
-#carrusel-2:checked ~ .boton-2,
-#carrusel-3:checked ~ .boton-3 {
+#carruselprimeraventana:checked ~ .botonuno,
+#carruselsegundaventana:checked ~ .botondos,
+#carruselterceraventana:checked ~ .botontres {
     display: block;
 }
 
 /* estilos de indicador de item en carrusel */
-.carrusel-indicador {
+.carruselindicador {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -406,13 +406,13 @@ footer a:hover {
 }
 
 /* estilos de los "li" de indicador de item en carrusel */
-.carrusel-indicador li {
+.carruselindicador li {
     display: inline-block;
     margin: 0 5px;
 }
 
 /* estilos para el punto que indica el item carrusel */
-.carrusel-punto {
+.carruselpunto {
     color: #fff;
     cursor: pointer;
     display: block;
@@ -420,14 +420,14 @@ footer a:hover {
 }
 
 /* estilos cuando el mouse esta encima del punto que indica el item carrusel */
-.carrusel-punto:hover {
+.carruselpunto:hover {
     color: #aaaaaa;
 }
 
 /* estilos para los radio buttons cuando estan seleccionados */
-#carrusel-1:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#carrusel-2:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#carrusel-3:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto {
+#carruselprimeraventana:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#carruselsegundaventana:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#carruselterceraventana:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto {
     color: #428bca;
 }
 
