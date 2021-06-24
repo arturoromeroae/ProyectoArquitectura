@@ -840,6 +840,9 @@ footer a:hover {
         height: 300px;
     }
     
+    #contenedoriconosservicios{
+        display: block;
+    }
 }
 
   
