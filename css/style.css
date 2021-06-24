@@ -923,21 +923,57 @@ footer a:hover {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
     margin: 20px;
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
 }
 /* estilos para los radio buttons cuando estan seleccionados */
-#zapatocarrusel01:checked ~ .boton-1,
-#zapatocarrusel02:checked ~ .boton-2,
-#zapatocarrusel03:checked ~ .boton-3,
-#zapatillascarrusel01:checked ~ .boton-1,
-#zapatillascarrusel02:checked ~ .boton-2,
-#zapatillascarrusel03:checked ~ .boton-3 {
+#deportivocarrusel01:checked ~ .boton-1,
+#deportivocarrusel02:checked ~ .boton-2,
+#deportivocarrusel03:checked ~ .boton-3,
+#deportivocarrusel01:checked ~ .boton-1,
+#deportivocarrusel02:checked ~ .boton-2,
+#deportivocarrusel03:checked ~ .boton-3,
+#deportivocarrusel11:checked ~ .boton-1,
+#deportivocarrusel12:checked ~ .boton-2,
+#deportivocarrusel13:checked ~ .boton-3,
+/*Casual*/
+#casualcarrusel01:checked ~ .boton-1,
+#casualcarrusel02:checked ~ .boton-2,
+#casualcarrusel03:checked ~ .boton-3,
+#casualcarrusel11:checked ~ .boton-1,
+#casualcarrusel12:checked ~ .boton-2,
+#casualcarrusel13:checked ~ .boton-3,
+/*Elegante*/ 
+#elegantecarrusel01:checked ~ .boton-1,
+#elegantecarrusel02:checked ~ .boton-2,
+#elegantecarrusel03:checked ~ .boton-3,
+#elegantecarrusel11:checked ~ .boton-1,
+#elegantecarrusel12:checked ~ .boton-2,
+#elegantecarrusel13:checked ~ .boton-3
+{
     display: block;
 }
 /* estilos para los radio buttons cuando estan seleccionados */
-#zapatocarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#zapatocarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#zapatocarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto {
+#deportivocarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#deportivocarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#deportivocarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+#deportivocarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#deportivocarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#deportivocarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+/*Casuales*/
+#casualcarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#casualcarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#casualcarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+#casualcarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#casualcarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#casualcarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+/*Elegantes*/
+#elegantecarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#elegantecarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#elegantecarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+#elegantecarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
+#elegantecarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
+#elegantecarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto     
+ {
     color: #428bca;
 }
 /* estilos para todas las imagenes de los items del carrusel */
@@ -946,56 +982,6 @@ footer a:hover {
     height: 420px;
     background-color: white;
 }
-
-
-
-.abajocarrusel h2{
-    text-align: center;
-}
-
-.likedislike{
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 20px;
-}
-
-/*El me gusta*/
-/*
-.likedislike label{
-    display: flex;
-    float: left;
-}
-.likedislike label h3{
-    visibility: hidden;
-    
-}
-.likedislike div input{
-    visibility: hidden;
-    display: none;
-}
-.megusta input[type=radio]:checked + label i{
-    color:blue
-}
-
-.megusta input[type=radio]:checked + label h3{
-    visibility: initial;
-}
-/*No me gusta
-.nomegusta input[type=radio]:checked + label i{
-    color:red;
-}
-
-.nomegusta input[type=radio]:checked + label h3{
-    visibility: initial;
-}
-
-*/
-
-
-
 .producto{
     margin: 20px;
     grid-column: 1 / 5;
@@ -1085,31 +1071,24 @@ footer a:hover {
     padding: auto;
 }
 
-
-
-
-
-
-
 .tiendas{
     grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-row: 3 / 3;
 }
-.tiendas a{
+.tiendas a, .marcasinstock{
     margin: auto;
     padding: auto;
     display:block;
     text-align: center;
-    padding:.3em .5em;
+    
 }
 .tiendas h1{
     grid-column: 1 / 5;
     text-align: center;
 }
-.marca1,.marca, .marcaopcional{
-   
+.marca1,.marca, .marcaopcional, .marcasinstock{
     width: 60%;
     padding: 5%;
 }
@@ -1118,6 +1097,11 @@ footer a:hover {
     box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
     transition: 1s;
     background-color: yellow;
+}
+.marcasinstock:hover{
+    box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
+    transition: 0.5s;
+    background-color: grey;
 }
 .marca1:hover{
     box-shadow: 0 6px 19px 10px rgba(0,0,0,0.2);
@@ -1323,6 +1307,7 @@ footer a:hover {
 }
 
 .paginaropa img {
+    width: 300px;
     height: 247px;
 }
 
@@ -1336,6 +1321,11 @@ footer a:hover {
 .paginacalzado img{
     width: 300px;
     height: 247px;
+}
+
+.paginacalzado a {
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -1355,10 +1345,10 @@ footer a:hover {
     height: 247px;
 }
 
-.cuerpoproductos {
+/*.cuerpoproductos {
     margin: 0 auto;
     padding: 0 auto;
-}
+}*/
 
 
 
