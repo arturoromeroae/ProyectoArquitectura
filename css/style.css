@@ -102,10 +102,12 @@ body{
     cursor: pointer;
 }
 
-#menu-toggle{
+/* contenedor de texto */
+#menuresponsive{
     display: none;
 }
 
+/* contenedor de logo en menu */
 #logomenu{
     position: absolute;
     width: 120px;
@@ -436,6 +438,7 @@ footer a:hover {
     display: flex;
 }
 
+/* contenedor de componente tarjeta */
 .tarjeta {
     /* efectos de sombra para las tarjetas */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -542,18 +545,21 @@ footer a:hover {
     margin-left: 40%;
 }
 
+/* contenedor de texto */
 .parrafoinformacionquienessomos{
     margin-top: 2%;
     margin-right: 3%;
     margin-left: 5%;
 }
 
+/* contenedor de logos */
 #logoquienessomos{
     margin-top: 25px;
     margin-left: 20px;
     margin-bottom: 5px;
 }
 
+/* contenedor de logos */
 #logoscontactoquienessomos{
     display: flex;
     margin: 20px;
@@ -563,6 +569,7 @@ footer a:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+/* contenedor de logos */
 .logoscirculos{
     padding: 30px;
     border-radius: 100%;
@@ -571,51 +578,59 @@ footer a:hover {
     font-size: 80px;
 }
 
+/* contenedor de logos */
 .tarjetalogos{
     margin-left: 18%;
     margin-top: 5%;
     margin-bottom: 3%;
 }
 
+/* contenedor de iconos */
 .iconocirculo a{
     text-decoration: none;
 }
 
+/* contenedor de logos */
 .logoscirculos:hover{
     cursor: pointer;
     box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.2);
 }
 
+/* contenedor de componente */
 .tarjetaequipo{
     margin: 10px;
 }
 
+/* contenedor de titulo */
 #tituloequipo{
     padding-top: 50px;
 }
 
+/* contenedor de iconos redes sociales */
 .socialiconos{
     color: black;
     text-decoration: none;
 }
 
+/* contenedor de iconos mouse encima */
 .socialiconos:hover{
     color: #426edb;
 }
 
 /* banner servicio */
-/* Container holding the image and the text */
+/* contenedor de imagen */
 .contenedorimagenbanner {
     position: relative;
     text-align: center;
     color: blue;
 }
 
+/* contenedor de imagen */
 #imagenservicios{
     filter:opacity(10%);
 }
 
-/* Centered text */
+/* contenedor de titulo */
 .tituloservicio {
     position: absolute;
     top: 50%;
@@ -625,29 +640,34 @@ footer a:hover {
     transform: translate(-50%, -50%);
 }
 
+/* contenedor de texto */
 .textoservicios{
     margin-left: 0px;
     margin-right: 70px;
     text-align: justify;
 }
 
+/* contenedor de imagen */
 #contenedorimagentexto{
     width: 40%;
     margin-left: 20px;
     margin-right: -100px;
 }
 
+/* contenedor de texto */
 #contenedortextoservicios{
     width: 60%;
     padding-top: 20px;
 }
 
+/* contenedor de imagen */
 #imagentienda{
     width: 70%;
     border-radius: 700px;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
+/* contenedor de iconos */
 #contenedoriconosservicios{
     margin-top: 50px;
     margin-bottom: 50px;
@@ -656,86 +676,107 @@ footer a:hover {
     padding: 20px;
 }
 
+/* contenedor de iconos */
 #contenedoriconosservicios p{
     padding: 20px;
 }
 
+/* contenedor de iconos */
 #contenedoriconosservicios div{
     padding: 20px;
     width: 100%;
 }
 
+/* contenedor de texto */
 .textoserviciosizq{
     margin-left: 70px;
     margin-right: 0px;
     text-align: justify;
 }
 
+/* contenedor de imagen */
 #contenedorimagendertexto{
     width: 40%;
     margin-left: 100px;
     margin-right: 0px;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosizq{
     width: 100%;
     padding-top: 20px;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosizq h1{
     font-size: 50px;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosizq p{
     font-size: 20px;
 }
 
+/* contenedor de imagen */
 #imagentiendader{
     width: 90%;
     border-radius: 20px;
 }
 
+/* coponente con imagen */
 #componenteimagender{
     padding: 20px;
     background-color: #124de42c;
 }
 
+/* contenedor de imagen */
 #componenteimagenizq{
     background-color: #7cddee;
 }
 
+/* contenedor de texto */
 .textoserviciosder{
     margin-left: 0px;
     margin-right: 70px;
     text-align: justify;
 }
 
+/* contenedor de imagen */
 #imagentiendaizq{
     width: 120%;
     margin-left: 0px;
     background-color:#7cddee;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosder h1{
     font-size: 50px;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosder p{
     font-size: 20px;
     margin-left: 20px;
 }
 
+/* contenedor de imagen */
 #contenedorimagendertexto{
     width: 40%;
     margin-right: 0px;
 }
 
+/* contenedor de texto */
 #contenedortextoserviciosder{
     width: 100%;
     padding-top: 20px;
 }
 
+/* estilos para todo el sitio version movil */
 @media only screen and (max-width: 600px) {
+    .carruselpantalla img{
+        height: 300px;
+    }
+
     .contenedortarjetas{
         display: block;
     }
@@ -835,6 +876,14 @@ footer a:hover {
     #formulariocontacto, #imagen{
         text-align: center;
         width: 100%;
+    }
+
+    #contenedoriconosservicios{
+        display: block;
+    }
+
+    #contenedoriconosservicios div{
+        padding: 0%;
     }
 }
 

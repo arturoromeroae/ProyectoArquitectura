@@ -11,37 +11,51 @@
     </head>
 
     <body>
-        <!-- barra de busqueda -->
-        <nav>
-            <div class="barraBusqueda">
-              <input type="text">
-              <button type="submit">Buscar</button>
-            </div>
-            <!-- menu principal -->
-            <div class="menuPrincipal">
-              <a href="./index.html">
-                <!-- iconos -->
-                <i class="fa fa-fw fa-home"></i>
-                Inicio
-              </a>
-              <a href="./quienessomos.html">
-                <i class="fa fa-fw fa-address-card"></i>
-                ¿Quiénes Somos?
-              </a>
-              <a class="active" href="./productos.html">
-                <i class="fa fa-shopping-bag"></i>
-                Productos
-              </a>
-              <a href="./servicios.html">
-                <i class="fa fa-bell"></i>
-                Servicios
-              </a>
-              <a href="./contactanos.html">
-                <i class="fa fa-phone"></i>
-                Contáctanos
-              </a>
-            </div>
-          </nav>
+        <!-- menu telefonos -->
+      <nav>
+        <label for="menuresponsive">
+          <div class="botonMenu">
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+       </label>
+       <input type="checkbox" id="menuresponsive" />
+       <!-- barra de busqueda -->
+        <img id="logomenu" src="../images/logoproyecto.png" alt="no se encontro la imagen">
+        <div class="barraBusqueda">
+          <input type="text">
+          <button type="submit">Buscar</button>
+        </div>
+        <!-- menu principal -->
+        <div class="menuPrincipal">
+          <a href="./index.html">
+            <!-- iconos importados de font-awesome -->
+            <i class="fa fa-fw fa-home"></i>
+            Inicio
+          </a>
+          <a href="./quienessomos.html">
+            <!-- iconos importados de font-awesome -->
+            <i class="fa fa-fw fa-address-card"></i>
+            ¿Quiénes Somos?
+          </a>
+          <a href="./productos.html">
+            <!-- iconos importados de font-awesome -->
+            <i class="fa fa-shopping-bag"></i>
+            Productos
+          </a>
+          <a href="./servicios.html">
+            <!-- iconos importados de font-awesome -->
+            <i class="fa fa-bell"></i>
+            Servicios
+          </a>
+          <a class="active" href="./contactanos.html">
+            <!-- iconos importados de font-awesome -->
+            <i class="fa fa-phone"></i>
+            Contáctanos
+          </a>
+        </div>
+      </nav>
 
           <div id="contenedor">
 
@@ -736,38 +750,43 @@
         </div>
 
         <!-- Footer -->
-        <footer class="">
-            <a href="">
+        <footer>
+          <div id="redessociales">
+            <a>
+              <!-- iconos importados de font-awesome -->
               <i class="fa fa-facebook-official"></i>
             </a>
-            <a href="">
+            <a>
+              <!-- iconos importados de font-awesome -->
               <i class="fa fa-instagram"></i>
             </a>
-            <a href="">
+            <a>
+              <!-- iconos importados de font-awesome -->
               <i class="fa fa-twitter"></i>
             </a>
-            <!-- menu footer -->
-            <div id="menucontainer">
-              <a href="./index.html">
-                Inicio
-              </a>
-              <a href="./quienes-somos.html">
-                ¿Quienes Somos?
-              </a>
-              <a href="./productos.html">
-                Productos
-              </a>
-              <a href="./servicios.html">
-                Servicios
-              </a>
-              <a class="active" href="./contactanos.html">
-                Contáctanos
-              </a>
-            </div>
-            <!-- texto integrantes -->
-            <div id="integrantes">
-              ©AJEM
-            </div>
+          </div>
+          <!-- menu footer -->
+          <div id="menucontainer">
+            <a href="./index.html">
+              Inicio
+            </a>
+            <a href="./quienessomos.html">
+              ¿Quienes Somos?
+            </a>
+            <a href="./productos.html">
+              Productos
+            </a>
+            <a href="./servicios.html">
+              Servicios
+            </a>
+            <a class="active" href="./contactanos.html">
+              Contáctanos
+            </a>
+          </div>
+          <!-- texto integrantes -->
+          <div id="integrantes">
+            ©AJEM
+          </div>
         </footer>
 
 
