@@ -926,58 +926,58 @@ footer a:hover {
     grid-column: 1 / 3;
 }
 /* estilos para los radio buttons cuando estan seleccionados */
-#deportivocarrusel01:checked ~ .boton-1,
-#deportivocarrusel02:checked ~ .boton-2,
-#deportivocarrusel03:checked ~ .boton-3,
-#deportivocarrusel01:checked ~ .boton-1,
-#deportivocarrusel02:checked ~ .boton-2,
-#deportivocarrusel03:checked ~ .boton-3,
-#deportivocarrusel11:checked ~ .boton-1,
-#deportivocarrusel12:checked ~ .boton-2,
-#deportivocarrusel13:checked ~ .boton-3,
+#deportivocarrusel01:checked ~ .botonuno,
+#deportivocarrusel02:checked ~ .botondos,
+#deportivocarrusel03:checked ~ .botontres,
+#deportivocarrusel01:checked ~ .botonuno,
+#deportivocarrusel02:checked ~ .botondos,
+#deportivocarrusel03:checked ~ .botontres,
+#deportivocarrusel11:checked ~ .botonuno,
+#deportivocarrusel12:checked ~ .botondos,
+#deportivocarrusel13:checked ~ .botontres,
 /*Casual*/
-#casualcarrusel01:checked ~ .boton-1,
-#casualcarrusel02:checked ~ .boton-2,
-#casualcarrusel03:checked ~ .boton-3,
-#casualcarrusel11:checked ~ .boton-1,
-#casualcarrusel12:checked ~ .boton-2,
-#casualcarrusel13:checked ~ .boton-3,
+#casualcarrusel01:checked ~ .botonuno,
+#casualcarrusel02:checked ~ .botondos,
+#casualcarrusel03:checked ~ .botontres,
+#casualcarrusel11:checked ~ .botonuno,
+#casualcarrusel12:checked ~ .botondos,
+#casualcarrusel13:checked ~ .botontres,
 /*Elegante*/ 
-#elegantecarrusel01:checked ~ .boton-1,
-#elegantecarrusel02:checked ~ .boton-2,
-#elegantecarrusel03:checked ~ .boton-3,
-#elegantecarrusel11:checked ~ .boton-1,
-#elegantecarrusel12:checked ~ .boton-2,
-#elegantecarrusel13:checked ~ .boton-3
+#elegantecarrusel01:checked ~ .botonuno,
+#elegantecarrusel02:checked ~ .botondos,
+#elegantecarrusel03:checked ~ .botontres,
+#elegantecarrusel11:checked ~ .botonuno,
+#elegantecarrusel12:checked ~ .botondos,
+#elegantecarrusel13:checked ~ .botontres
 {
     display: block;
 }
 /* estilos para los radio buttons cuando estan seleccionados */
-#deportivocarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#deportivocarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#deportivocarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
-#deportivocarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#deportivocarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#deportivocarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+#deportivocarrusel01:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#deportivocarrusel02:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#deportivocarrusel03:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto,
+#deportivocarrusel11:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#deportivocarrusel12:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#deportivocarrusel13:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto,
 /*Casuales*/
-#casualcarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#casualcarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#casualcarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
-#casualcarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#casualcarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#casualcarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
+#casualcarrusel01:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#casualcarrusel02:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#casualcarrusel03:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto,
+#casualcarrusel11:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#casualcarrusel12:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#casualcarrusel13:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto,
 /*Elegantes*/
-#elegantecarrusel01:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#elegantecarrusel02:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#elegantecarrusel03:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto,
-#elegantecarrusel11:checked ~ .boton-1 ~ .carrusel-indicador li:nth-child(1) .carrusel-punto,
-#elegantecarrusel12:checked ~ .boton-2 ~ .carrusel-indicador li:nth-child(2) .carrusel-punto,
-#elegantecarrusel13:checked ~ .boton-3 ~ .carrusel-indicador li:nth-child(3) .carrusel-punto     
+#elegantecarrusel01:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#elegantecarrusel02:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#elegantecarrusel03:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto,
+#elegantecarrusel11:checked ~ .botonuno ~ .carruselindicador li:nth-child(1) .carruselpunto,
+#elegantecarrusel12:checked ~ .botondos ~ .carruselindicador li:nth-child(2) .carruselpunto,
+#elegantecarrusel13:checked ~ .botontres ~ .carruselindicador li:nth-child(3) .carruselpunto     
  {
     color: #428bca;
 }
 /* estilos para todas las imagenes de los items del carrusel */
-.carruselzapatos .carrusel-pantalla img {
+.carruselzapatos .carruselpantalla img {
     display: block;
     height: 420px;
     background-color: white;
