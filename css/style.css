@@ -200,7 +200,6 @@ body{
     footer #redessociales{
         text-align: center;
     }
-    
 }
 
 /* estilos para el contenedor de la pagina de contacto */
@@ -836,6 +835,11 @@ footer a:hover {
         text-align: center;
         width: 100%;
     }
+
+    .carruselpantalla img{
+        height: 300px;
+    }
+    
 }
 
   
