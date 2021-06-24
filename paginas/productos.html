@@ -5,42 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Productos</title>
-        <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body class="cuerpoproductos">
-       <!-- barra de busqueda -->
+    <body>
+       <!-- menu telefonos -->
        <nav>
-        <div class="barraBusqueda">
-          <input type="text">
-          <button type="submit">Buscar</button>
-        </div>
-        <!-- menu principal -->
-        <div class="menuPrincipal">
-          <a href="./index.html">
-            <!-- iconos -->
-            <i class="fa fa-fw fa-home"></i>
-            Inicio
-          </a>
-          <a href="./quienessomos.html">
-            <i class="fa fa-fw fa-address-card"></i>
-            ¿Quiénes Somos?
-          </a>
-          <a class="active" href="./productos.html">
-            <i class="fa fa-shopping-bag"></i>
-            Productos
-          </a>
-          <a href="./servicios.html">
-            <i class="fa fa-bell"></i>
-            Servicios
-          </a>
-          <a href="./contactanos.html">
-            <i class="fa fa-phone"></i>
-            Contáctanos
-          </a>
-        </div>
-    </nav> 
+        <label for="menu-toggle">
+          <div class="botonMenu">
+             <span></span>
+             <span></span>
+             <span></span>
+          </div>
+       </label>
+       <input type="checkbox" id="menu-toggle" />
+       <!-- barra de busqueda -->
+       <img id="logomenu" src="../images/logoproyecto.png" alt="no se encontro la imagen">
+          <div class="barraBusqueda">
+            <input type="text">
+            <button type="submit">Buscar</button>
+          </div>
+          <!-- menu principal -->
+          <div class="menuPrincipal">
+            <a href="./index.html">
+              <!-- iconos -->
+              <i class="fa fa-fw fa-home"></i>
+              Inicio
+            </a>
+            <a href="./quienessomos.html">
+              <i class="fa fa-fw fa-address-card"></i>
+              ¿Quiénes Somos?
+            </a>
+            <a class="active" href="./productos.html">
+              <i class="fa fa-shopping-bag"></i>
+              Productos
+            </a>
+            <a href="./servicios.html">
+              <i class="fa fa-bell"></i>
+              Servicios
+            </a>
+            <a href="./contactanos.html">
+              <i class="fa fa-phone"></i>
+              Contáctanos
+            </a>
+          </div>
+      </nav>
+
         <div>
           <h1 class="principalheader"><center>Productos</center></h1>
 
@@ -50,9 +61,9 @@
          <div id="ropacalzadoaccesorios">
               <!--Parte Ropa-->
               <div class="paginaropa" >
-                  <h1>Ropa</h1>
-                  <img src="../images/Productos/manoufit.png" alt="Imagen no encontrada">
-        
+                  <a href="../paginas/Ropa.html"><h1>Ropa</h1></a>
+                  <img src="../images/Productos/handoufit.png" alt="Imagen no encontrada">
+
                   <p>
                     En esta categoría encontrará el mejor estilo para su ropa; 
                     casual, elegante, deportiva. 
@@ -61,8 +72,8 @@
 
               <!--Parte Calzado-->
                 <div class="paginacalzado">
-                  <h1>Calzado</h1>
-                  <a href="../paginas/Zapatos.html"><img src="../images/Productos/shoe.png" alt="Imagen no encontrada"></a>
+                  <a href="../paginas/Zapatos.html"><h1>Calzado</h1></a>
+                  <img src="../images/Productos/shoe.png" alt="Imagen no encontrada">
 
                   <p>
                     Los mejores calzados tanto para una reunión formal, como para salir a la 
@@ -72,8 +83,8 @@
 
                 <!--Parte Accesorios-->
                 <div class="paginaaccesorios">
-                  <h1>Accesorios</h1>
-                  <a href="../paginas/Accesorios.html"><img src="../images/Productos/watch.png" alt="Imagen no encontrada" ></a>
+                  <a href="../paginas/Accesorios.html"><h1>Accesorios</h1></a>
+                  <img src="../images/Productos/watch.png" alt="Imagen no encontrada" >
             
                   <p>
                     En esta sección encontrará los accesorios más novedosos; 
@@ -83,23 +94,25 @@
           </div> 
               
         <!-- Footer -->
-        <footer class="">
-          <a href="">
-            <i class="fa fa-facebook-official"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-twitter"></i>
-          </a>
+        <footer>
+          <div id="redessociales">
+            <a>
+              <i class="fa fa-facebook-official"></i>
+            </a>
+            <a>
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a>
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
           <!-- menu footer -->
           <div id="menucontainer">
             <a href="./index.html">
               Inicio
             </a>
             <a href="./quienessomos.html">
-              ¿Quiénes Somos?
+              ¿Quienes Somos?
             </a>
             <a href="./productos.html">
               Productos
@@ -115,7 +128,7 @@
           <div id="integrantes">
             ©AJEM
           </div>
-      </footer>
+        </footer>
 
     </body>
 </html>
