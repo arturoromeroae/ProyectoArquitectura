@@ -161,7 +161,7 @@ body{
        cursor: pointer;
     }
     
-    #menu-toggle{
+    #menuresponsive{
        display: none;
     }
     
@@ -172,7 +172,7 @@ body{
        padding: 10px 0;
     }
 
-    #menu-toggle:checked ~ .menuPrincipal a{
+    #menuresponsive:checked ~ .menuPrincipal a{
         display: block;
     }
 
